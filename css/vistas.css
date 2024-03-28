@@ -201,10 +201,14 @@
     top: 200px;
     width: 500px;
     margin: 0 auto;
-    background-color: #f2f2f2;
+    background-color: #000000;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2{
+    color: aliceblue;
 }
 
 .campo {
@@ -214,6 +218,11 @@
 label {
     display: block;
     font-weight: bold;
+    color: aliceblue;
+}
+
+input {
+    background-color: #2e2b2b;
 }
 
 input[type="text"],
@@ -221,7 +230,7 @@ input[type="tel"],
 input[type="email"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #470099;
     border-radius: 4px;
     box-sizing: border-box;
 }
