@@ -1,0 +1,102 @@
+[
+    {
+        "id": "Audifonos-E50",
+        "titulo": "Audífonos E50",
+        "imagen": ["./images/audifonos/1.jpg","./images/audifonos/1.1.jpg","./images/audifonos/1.2.jpg"],
+        "categoria": {
+            "nombre": "Audífonos",
+            "id": "electronico"
+        },
+        "precio": 55000,
+        "colores": ["negros"],
+        "info": "Audífonos E50 $55.000 Bluetooth 5.1 estéreo Sensor digital Estilo: en la oreja Principio de vocalismo: Díamica Origen: China continental Botón de Control: Sí Comunicación: inalámbrica Control de volumen: Sí Tipo de enchufe: Tipo de línea Material de las almohadillas para auriculares: Silicona Tipo inalámbrico: Bluetooth Longitud de línea: 0 m Lista de paquetes: Cable de carga, Estuche de carga, Manual del usuario Códecs: ac Diámetro del conductor: 10 mm Resistencia: 32 Sensibilidad: 128dB Es inalámbrico: Sí Conectores: usb Tipo de auriculares: Semi-abierto Versión de Bluetooth: 5.1 Distorsión armónica Total: 1% Método de carga: Estuche de carga Salida máxima: 1mW Aplicación de soporte: No Función: deportes, para teléfono móvil, para videojuegos, auriculares comunes Luces led, Duración batería auriculares = 3.5 H Duración batería caja = 3 cargas + Contesta llamadas, Con Micrófono: Sí Características: cancelación de ruido activa, resistente al agua salpicaduras. No sumergir en líquidos",
+        "numerodecantidades": 10,
+        "tallaInicial":  37,
+        "tallaFinal": 43
+        
+    }
+    ,
+
+    {
+        "id": "zandalias-01",
+        "titulo": "Puma",
+        "imagen": ["./images/zandalias/2.jpg","./images/zandalias/2.1.jpg","./images/zandalias/2.2.jpg"],
+        "categoria": {
+            "nombre": "zandalias",
+            "id": "calzado"
+        },
+        "precio":80000,
+        "colores": ["negros", "vintage", "blanco"],
+        "info" : "Dama : Tallas 35 a la 40,  Precio 88.000 pesos ",
+        "numerodecantidades": 10,
+        "tallaInicial":  35,
+        "tallaFinal": 40
+    },
+    {
+        "id": "zapatillas-01",
+        "titulo": "HUGO BOSS",
+        "imagen": ["./images/zapatillas/1.jpg","./images/zapatillas/1.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio":115000,
+        "colores": ["negros"],
+        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
+        "numerodecantidades": 10,
+        "tallaInicial":  37,
+        "tallaFinal": 43
+    },
+
+    {
+        "id": "zapatillas-02",
+        "titulo": "HUGO BOSS",
+        "imagen":["./images/zapatillas/2.jpg","./images/zapatillas/2.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 115000,
+        "colores": ["negros"],
+        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
+        "numerodecantidades": 10,
+        "tallaInicial":  37,
+        "tallaFinal": 43
+    },
+
+    {
+        "id": "zapatillas-03",
+        "titulo": "HUGO BOSS",
+        "imagen":["./images/zapatillas/3.jpg","./images/zapatillas/3.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio":115000,
+        "colores": ["negros"],
+        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
+        "numerodecantidades": 10,
+        "tallaInicial":  37,
+        "tallaFinal": 43
+    },
+    {
+        "id": "zapatillas-04",
+        "titulo": "HUGO BOSS",
+        "imagen":["./images/zapatillas/4.jpg","./images/zapatillas/4.1.jpg","./images/zapatillas/4.2.jpg" ],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 128000,
+        "colores": ["negros"],
+        "info" : "Dama y Caballero: Tallas 37 a la 43👣 , Precio: 128.000 pesos 💵",
+        "numerodecantidades": 10,
+        "tallaInicial":  37,
+        "tallaFinal": 43 
+    }
+
+
+
+    
+   
+]
