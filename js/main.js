@@ -1,4 +1,5 @@
 import { renderHome } from "./home.js";
+import { slider } from "./slider2.js";
 
 
 let productos = [];
@@ -42,6 +43,7 @@ botonesCategorias.forEach(boton => {
         }
         if(e.currentTarget.id === "home"){
             renderHome(main)
+            slider()
 
 
         }
@@ -222,8 +224,8 @@ function drawkp(e) {
                 <input type="text" id="tallaform" name="tallaform" required>
             </div>
             <div class="campo">
-            <label for="pais">colores: ${pro.colores} </label>
-                <input type="text" id="colorForm" name="color" required>
+            <label for="pais">colores/descripcion: ${pro.colores} </label>
+                <input type="text" id="colorForm" name="color" placeholder="escribe el color/descripcion de las opciones" required>
             </div>
             <div class="campo">
                 <p class="men"></p>

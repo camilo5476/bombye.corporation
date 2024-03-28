@@ -297,6 +297,10 @@ input[type="email"]:focus {
         border-radius: 5px;
         background-color: #050505;
     }
+    .formulario {
+        position: relative;
+        left: 1%;
+    }
 }
 
 @media (max-width: 900px) {

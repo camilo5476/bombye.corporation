@@ -134,6 +134,7 @@ export function renderHome (main){
 
 
     `
+    
 
     return main.innerHTML = home
 
