@@ -365,17 +365,17 @@ nav {
 #at,
 #A {
     position: absolute;
-    margin-top: 270px;
+    margin-top: 230px;
     color: var(--color-accent1);
     font-size: 40px;
-    left: 100px;
+    left: 150px;
 }
 
 #ade,
 #a {
     position: absolute;
-    right: 90px;
-    margin-top: 270px;
+    right: 140px;
+    margin-top: 230px;
     color: var(--color-accent1);
     font-size: 40px;
 }
@@ -447,7 +447,7 @@ footer {
 .footer-content {
     display: flex; /* Mostrar en fila */
     justify-content: space-between; /* Distribuir espacios uniformemente */
-    gap: 200px;
+    gap: 10%;
 }
 
 
@@ -455,6 +455,10 @@ footer {
 .footer-section {
     flex: 1; /* Ocupar el mismo espacio */
     margin-right: 20px; /* Margen derecho */
+}
+
+.politicas {
+    width: 50%;
 }
 
 .politicas h2{

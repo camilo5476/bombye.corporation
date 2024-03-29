@@ -124,6 +124,11 @@ export function renderHome (main){
                                 <h2>Envío y Entrega</h2>
                                 <p>Nos esforzamos por garantizar que los productos sean enviados en un plazo razonable y que lleguen en perfectas condiciones. Sin embargo, no nos hacemos responsables de los retrasos en la entrega debido a circunstancias fuera de nuestro control.</p>
                             </div>
+                            <div class="politicas">
+                                <h2>Contacto</h2>
+                                <p>+57 300 1964743</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </footer>

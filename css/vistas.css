@@ -266,6 +266,9 @@ input[type="email"]:focus {
     border-color: #4CAF50;
 }
 
+.cop{
+    font-size: 30px;
+}
 
 
 /* Media Query para 1400px */

@@ -157,6 +157,21 @@ function drawkp(e) {
     const index = e.currentTarget.dataset.index;
     const pro = final[index];
     let imagenes = pro.imagen;
+    let numero = pro.precio
+    const numeroString = numero.toString();
+    let resultado = "";
+    let contador = 0;
+
+    for (let i = numeroString.length - 1; i >= 0; i--) {
+        resultado = numeroString[i] + resultado;
+        contador++;
+        if (contador % 3 === 0 && i !== 0) {
+          resultado = "." + resultado;
+        }
+        console.log(resultado)
+    }
+
+
 
     console.log("Índice del producto en el array productosEnCarrito:", index);
     main.innerHTML = `
@@ -172,7 +187,7 @@ function drawkp(e) {
                     <h2 class="title" >${pro.titulo}</h2>
                     <hr>
                     <p class="uno-uno">PRECIO</p>
-                    <p class="uno">${pro.precio} COP</p>
+                    <p class="uno">${resultado}</p><p class="cop">COP</p>
                     <hr>
                     <p class="dos">${pro.info}</p>
                 </div>
@@ -321,8 +336,22 @@ function drawkp(e) {
         const precioUnitario = parseFloat(pro.precio);
         const cantidad = parseFloat(document.querySelector(".ca").textContent);
         const precioTotal = precioUnitario * cantidad;
-        preciopParams = precioTotal; // Actualiza la variable global preciopParams
-        document.querySelector(".uno").textContent = precioTotal;
+        let numero1 = precioTotal
+        const numeroString1 = numero1.toString();
+        let resultado1 = "";
+        let contador1 = 0;
+    
+        for (let i = numeroString1.length - 1; i >= 0; i--) {
+            resultado1 = numeroString1[i] + resultado1;
+            contador1++;
+            if (contador1 % 3 === 0 && i !== 0) {
+              resultado1 = "." + resultado1;
+            }
+            console.log(resultado)
+        }
+    
+        
+        document.querySelector(".uno").textContent = resultado1;
         data.amount = precioTotal; // Actualiza el precio en el objeto data
         
     }
@@ -344,7 +373,7 @@ function drawkp(e) {
             name: pro.id,
             description: pro.info,
             currency: "cop",
-            amount: preciopParams,
+            amount: pro.precio,
             tax_base: "4000",
             tax: "500",
             tax_ico: "500",
