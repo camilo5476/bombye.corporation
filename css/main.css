@@ -70,7 +70,16 @@ li{
 }
 
 
+.logo12 {
+    position: relative;
+    background-image: url(/images/logo/logo.jpg);
+    background-size: 100% 100%;
+    width: 20%;
+    height: 20%;
+    bottom: 20%;
+    border-radius: 10px;
 
+}
 
 
 #bor{
