@@ -74,7 +74,11 @@ function cargarProductos(productosElegidos) {
                     <button class="producto-agregar" id="${producto.id}">Agregar</button>
                 </div>
             </div>
-        `;
+        
+        `
+
+
+        ;
         main.innerHTML = ""
         contenedorProductos.appendChild(div);
         main.appendChild(contenedorProductos)
@@ -83,6 +87,8 @@ function cargarProductos(productosElegidos) {
     // Actualizar los botones de agregar
     actualizarBotonesAgregar();
 }
+
+
 
 
 
@@ -184,7 +190,7 @@ function drawkp(e) {
         <div class="producto-detalles2">
            <div class="info">
                 <div class="descripciones">
-                    <h2 class="title" >${pro.titulo}</h2>
+                    <h2 class="title" >${pro.titulo}- ${pro.id}</h2>
                     <hr>
                     <p class="uno-uno">PRECIO</p>
                     <p class="uno">${resultado}</p><p class="cop">COP</p>
@@ -193,6 +199,7 @@ function drawkp(e) {
                 </div>
                 
                 <div class="cantidades">
+                    <p>CANTIDAD:</p>
                     <button class="mas">+</button>
                     <p class="ca">${mas}</p>
                     <button class="menos">-</button>
@@ -235,12 +242,13 @@ function drawkp(e) {
                 <input type="text" id="pais" name="pais" required>
             </div>
             <div class="campo">
-                <label for="pais">tallas: ${pro.tallaInicial}- ${pro.tallaFinal} </label>
+                <label for="pais">tallas: ${pro.tallaInicial}- ${pro.tallaFinal}</label>
                 <input type="text" id="tallaform" name="tallaform" required>
             </div>
             <div class="campo">
-            <label for="pais">colores/descripcion: ${pro.colores} </label>
-                <input type="text" id="colorForm" name="color" placeholder="escribe el color/descripcion de las opciones" required>
+            <label for="pais"  class="id">Productos: ID - ${pro.id} </label>
+                <div class="des-imagenes"></div>
+                <input type="text" id="colorForm" name="color" placeholder="Coloca el numero que le corresponda al producto que quieres junto con el ID" required>
             </div>
             <div class="campo">
                 <p class="men"></p>
@@ -493,6 +501,29 @@ function drawkp(e) {
            
         })
     })
+
+    const caja = document.querySelector(".des-imagenes")
+
+        
+
+
+    let jsonimagenes = pro.imagen 
+    jsonimagenes.forEach((im ,i)=> {
+        const div1 = document.createElement("div")
+        div1.classList.add("caja-imagenes")
+        div1.innerHTML =  ` 
+            <img src="${im}">
+            <p>${i}</p>
+        
+        `
+        caja.appendChild(div1)
+            
+    })
+    
+    
+    
+        
+ 
 
 
 

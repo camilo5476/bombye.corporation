@@ -20,7 +20,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #14171a;
-    height: 300vh;
     overflow-x: hidden;
 }
 
@@ -62,7 +61,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 3%;
 }
 
 li{
@@ -160,6 +159,7 @@ li{
         height: 15vh;
         width: 100%;
         overflow-x: visible;
+        z-index: 99;
     
     }
 
@@ -174,6 +174,7 @@ li{
         opacity: 0;
         visibility: hidden;
         transition: .2s;
+        z-index: 99;
     }
 
     .aside-visible {
@@ -232,11 +233,14 @@ li{
         right: 20px;
     }
     .contenedor-productos {
+        position: relative;
         grid-template-columns: repeat(2, 1fr);
+        top: 100px;
     }
     #qw{
         height: 250px;
         width: 250px;
+        z-index: -1;
     }
     
 }
@@ -245,7 +249,6 @@ li{
     .contenedor-productos {
         z-index: 1;
         grid-template-columns: repeat(1, 300px);
-        background-color: #0db659;
         justify-content: center;
     }
     #qw{
