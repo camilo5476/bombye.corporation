@@ -260,33 +260,6 @@ function drawkp(e) {
    
   `;
 
-    if (pro.categoria.id === "calzado") {
-        document.querySelectorAll(".tallas-calzado").forEach(stye => {
-            stye.style.display = "flex";
-        });
-        let tallaumento1 = pro.tallaInicial;
-        const tallasAumento = document.querySelectorAll(".talla-aumento");
-        tallasAumento.forEach(tallas => {
-            tallas.addEventListener("click", e => {
-                tallaumento1++;
-                if (tallaumento1 > pro.tallaFinal) {
-                    tallaumento1 = pro.tallaFinal;
-                }
-                document.querySelector(".tallas").textContent = tallaumento1;
-            });
-        });
-
-        const tallasDecreciente = document.querySelectorAll(".talla-decreciente");
-        tallasDecreciente.forEach(tallas => {
-            tallas.addEventListener("click", e => {
-                tallaumento1--;
-                if (tallaumento1 <  pro.tallaInicial) {
-                    tallaumento1 =  pro.tallaInicial;
-                }
-                document.querySelector(".tallas").textContent = tallaumento1;
-            });
-        });
-    }
     const botonmas = document.querySelectorAll(".mas");
     botonmas.forEach((btn) => {
         btn.addEventListener("click", e => {

@@ -4,7 +4,9 @@ export function renderHome (main){
             <section class="cuerpo">
                 <div class="img-fondo">
                     <div class="eslogan">
-                        <p>donde la moda se encuentra con la personalización en cada paso!</p>
+                        <div class="logo12">
+                        </div>
+                        <p></p>
                     </div>
                 </div>
             </section>

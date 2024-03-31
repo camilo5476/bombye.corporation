@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -44,7 +45,7 @@ aside{
     top: 0;
     z-index: 99;
     width: 100%;
-    height: 11vh;
+    height: 15vh;
     background-color: rgb(43, 41, 41);
 }
 
@@ -62,21 +63,54 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 3%;
+
 }
 
 li{
     list-style-type: none;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #e2e2e2;
 
 }
 
+li:hover{
+    background-color: #252527;
+}
+
+li button{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.categorias32 {
+    position: absolute;
+    top: 130px;
+    height: 60px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    text-align: center;
+    justify-content: center;
+}
+
+#menu34{
+    cursor: pointer;
+}
+
+.rop{
+    display: none;
+}
 
 .logo12 {
     position: relative;
     background-image: url(/images/logo/logo.jpg);
     background-size: 100% 100%;
-    width: 20%;
-    height: 20%;
-    bottom: 20%;
+    width: 10%;
+    height: 40%;
+    bottom: 2%;
     border-radius: 10px;
 
 }
@@ -146,22 +180,6 @@ li{
 
 
 @media screen and (max-width: 1500px) {
-    .contenedor-productos {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        row-gap: 50px;
-    }
-
-    #qw{
-        height: 400px;
-        width: 400px;
-        left: 10%;
-
-    }
-    
-}
-
-@media screen and (max-width: 1000px) {
     .wrapper{
         position: relative;
         background-color: #252527;
@@ -197,18 +215,18 @@ li{
 
     .header-mobile{
         position: absolute;
-        top: 25px;
+        top: 20px;
         left: 5%;
         display: block;
 
     }
 
     .open-menu{
-        width:  30px;
-        height: 30px;
+        width:  70px;
+        height: 65px;
         border-radius: 10px;
         border: none;
-        background-color: #961818;
+        background-color: #554545;
     }
 
     ul{
@@ -216,7 +234,14 @@ li{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .ds{
+        display: flex;
+        flex-direction: column;
         gap: 30px;
+
     }
 
     li{
@@ -224,9 +249,11 @@ li{
         border-radius: 8px;
     }
 
-    li:first-child{
-        background-color: #961818;
+    li button{
+        font-size: 10px;
     }
+
+
 
     li:hover{
         background-color: #961818;
@@ -241,6 +268,23 @@ li{
         top: 20px;
         right: 20px;
     }
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+
+    #qw{
+        height: 400px;
+        width: 400px;
+        left: 10%;
+
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+
     .contenedor-productos {
         position: relative;
         grid-template-columns: repeat(2, 1fr);

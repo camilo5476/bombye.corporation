@@ -1,6 +1,6 @@
 export function slider (){
     let array = [
-        "../images/zapatillas/1.jpg", "../images/zapatillas/1.1.jpg","../images/zapatillas/2.jpg", "../images/zapatillas/2.1.jpg", "../images/zapatillas/3.jpg", "../images/zapatillas/3.1.jpg", "../images/zapatillas/4.jpg", "../images/zapatillas/4.1.jpg",
+        "../images/zapatillas/1.jpg", "./images/bolsos/2.jpg","../images/zapatillas/2.jpg", "../images/zapatillas/2.1.jpg","", "../images/zapatillas/3.1.jpg", "../images/zapatillas/4.jpg", "../images/zapatillas/4.1.jpg",
     ];
     const elementosImg = document.querySelectorAll(".img5");
     elementosImg.forEach((ele, index) => {
@@ -12,7 +12,7 @@ export function slider (){
     document.querySelector(".btns").addEventListener("click", e => {
         if (e.target.id === "ade") {
             let carruselesWidth = document.querySelector("#men").offsetWidth;
-            if (carruselesWidth === 302 || carruselesWidth === 300) {
+            if (carruselesWidth === 201 || carruselesWidth === 200 || carruselesWidth === 100) {
                 if (total === -87.5) {
                     return;
                 } else {
@@ -41,7 +41,7 @@ export function slider (){
     
         if (e.target.id === "at") {
             let carruselesWidth = document.querySelector("#men").offsetWidth;
-            if (carruselesWidth === 302 || carruselesWidth === 300) {
+            if (carruselesWidth === 202 || carruselesWidth === 200 ||carruselesWidth === 100) {
                 if (total === 0) {
                     return;
                 } else {
@@ -85,7 +85,7 @@ export function slider (){
         if (e.target.id === "a") {
         
             let carruselesWidth = document.querySelector("#woman").offsetWidth;
-            if (carruselesWidth === 300) {
+            if (carruselesWidth === 200 || carruselesWidth === 100) {
                 if(vol === -87.5 ){
                     return
                 }else{
@@ -117,7 +117,7 @@ export function slider (){
     
         if (e.target.id === "A") {
             let carruselesWidth = document.querySelector("#woman").offsetWidth;
-            if (carruselesWidth === 300) {
+            if (carruselesWidth === 200 || carruselesWidth === 100) {
                 if(vol === 0 ){
                     return
                 }else{
@@ -155,5 +155,8 @@ export function slider (){
         console.log("Ancho del elemento:", ancho, "y" , ancho1 );
     });
     
+
+    
+
 
 }
