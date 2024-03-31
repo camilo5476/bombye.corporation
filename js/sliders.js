@@ -71,7 +71,7 @@ document.querySelector(".btns").addEventListener("click", e => {
 
 
 let arrayP = [
-    "../images/audifonos/1.jpg","../images/audifonos/1.1.jpg", "../images/audifonos/1.2.jpg", "../images/zandalias/2.jpg", "../images/zandalias/2.1.jpg", "../images/zandalias/2.2.jpg", "../images/zandalias/2.3.jpg", "../images/zandalias/2.jpg",
+    "./images/ropaevo/3.1.jpg","../images/audifonos/1.1.jpg", "./images/ropaevo/1.jpg", "../images/zandalias/2.jpg", "./images/relojes/1.jpg", "./images/audifonos/2.jpg", "./images/relojes/2.2.jpg", "./images/zapatillas/5.jpg",
 ];
 const elementos2 = document.querySelectorAll(".muj");
 elementos2.forEach((element, i) => {
