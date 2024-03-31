@@ -51,7 +51,7 @@
     {
         "id": "zandalias-03",
         "titulo": "zandalias planas - niña",
-        "imagen":  ["./images/zapatillas/5.jpg","./images/zapatillas/5.1.jpg", "./images/zapatillas/5.2.jpg"],
+        "imagen":  ["./images/zandalias/5.jpg","./images/zandalias/5.1.jpg", "./images/zandalias/5.2.jpg"],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
@@ -65,7 +65,7 @@
     {
         "id": "zandalias-04",
         "titulo":"zandalias planas - dama",
-        "imagen":  ["./images/zapatillas/6.jpg","./images/zapatillas/6.1.jpg", "./images/zapatillas/6.2.jpg","./images/zapatillas/6.3.jpg", "./images/zapatillas/6.4.jpg"],
+        "imagen":  ["./images/zandalias/6.jpg","./images/zandalias/6.1.jpg", "./images/zandalias/6.2.jpg","./images/zandalias/6.3.jpg", "./images/zandalias/6.4.jpg"],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
@@ -79,7 +79,7 @@
     {
         "id": "zandalias-05",
         "titulo": "zandalias planas - dama",
-        "imagen":  ["./images/zapatillas/7.jpg","./images/zapatillas/7.1.jpg", "./images/zapatillas/7.2.jpg","./images/zapatillas/7.3.jpg", "./images/zapatillas/7.4.jpg"],
+        "imagen":  ["./images/zandalias/7.jpg","./images/zandalias/7.1.jpg", "./images/zandalias/7.2.jpg","./images/zandalias/7.3.jpg", "./images/zandalias/7.4.jpg"],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
@@ -621,9 +621,9 @@
         "tallaFinal": 42
     },
     {
-        "id": "zapatos-02",
+        "id": "zapatos-03",
         "titulo": "🔥REPOSICION🔥 LACOSTE🐊",
-        "imagen":["./images/zapatos/3.jpg", "./images/zapatos/3.1.jpg","./images/zapatos/3.2.jpg","./images/zapatos/3.3.jpg", "./images/zapatos/3.4.jpg" ],
+        "imagen":["./images/zapatos/3.jpg", "./images/zapatos/3.1.jpg","./images/zapatos/3.3.jpg", "./images/zapatos/3.4.jpg" ,  "./images/zapatos/3.5.jpg" ],
         "categoria": {
             "nombre":  "REPOSICION LACOSTE",
             "id": "zapatos"
@@ -634,21 +634,6 @@
         "numerodecantidades": 10,
         "tallaInicial": 37,
         "tallaFinal": 43
-    },
-    {
-        "id": "zapatos-02",
-        "titulo": "🔥REPOSICION🔥 LACOSTE🐊",
-        "imagen":["./images/zapatos/3.jpg", "./images/zapatos/3.1.jpg","./images/zapatos/3.2.jpg","./images/zapatos/3.3.jpg", "./images/zapatos/3.4.jpg" ],
-        "categoria": {
-            "nombre":  "REPOSICION LACOSTE",
-            "id": "zapatos"
-        },
-        "precio": 78000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
-        "info" : "✅Llego Nuevo Calzado Velez👞  Nueva colección, Para caballero💪 , Fotos reales💯 , Especificaciones: Cosido 🧵 Sintético ", 
-        "numerodecantidades": 10,
-        "tallaInicial": 30,
-        "tallaFinal": 0
     },
     {
         "id": "bolso-01",

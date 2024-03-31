@@ -4,8 +4,6 @@ export function renderHome (main){
             <section class="cuerpo">
                 <div class="img-fondo">
                     <div class="eslogan">
-                        <div class="logo12">
-                        </div>
                         <p></p>
                     </div>
                 </div>

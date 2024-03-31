@@ -1,6 +1,6 @@
 export function slider (){
     let array = [
-        "../images/zapatillas/1.jpg", "./images/bolsos/2.jpg","../images/zapatillas/2.jpg", "../images/zapatillas/2.1.jpg","", "../images/zapatillas/3.1.jpg", "../images/zapatillas/4.jpg", "../images/zapatillas/4.1.jpg",
+        "../images/zapatillas/1.jpg", "./images/bolsos/2.jpg","../images/zapatillas/2.jpg", "../images/zapatillas/2.1.jpg","./images/ropaevo/8.9.1.jpg", "../images/zapatillas/3.1.jpg", "../images/zapatillas/4.jpg", "./images/ropaevo/4.2.jpg",
     ];
     const elementosImg = document.querySelectorAll(".img5");
     elementosImg.forEach((ele, index) => {
@@ -72,7 +72,7 @@ export function slider (){
     
     
     let arrayP = [
-        "../images/audifonos/1.jpg","../images/audifonos/1.1.jpg", "../images/audifonos/1.2.jpg", "../images/zandalias/2.jpg", "../images/zandalias/2.1.jpg", "../images/zandalias/2.2.jpg", "../images/zandalias/2.3.jpg", "../images/zandalias/2.jpg",
+        "./images/ropaevo/3.1.jpg","../images/audifonos/1.1.jpg", "./images/ropaevo/1.jpg", "../images/zandalias/2.jpg", "./images/relojes/1.jpg", "./images/audifonos/2.jpg", "./images/relojes/2.2.jpg", "./images/zapatillas/5.jpg",
     ];
     const elementos2 = document.querySelectorAll(".muj");
     elementos2.forEach((element, i) => {

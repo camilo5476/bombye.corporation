@@ -235,13 +235,13 @@ li button{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     .ds{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
 
     }
 
@@ -300,7 +300,7 @@ li button{
     .contenedor-productos {
         position: relative;
         grid-template-columns: repeat(2, 1fr);
-        top: 100px;
+        top: 200px;
     }
     #qw{
         height: 250px;

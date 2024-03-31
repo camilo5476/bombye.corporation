@@ -386,8 +386,8 @@ input[type="email"]:focus {
 
     .caja-imagenes{
         position: relative;
-        width: 5.5rem;
-        height: 110%;
+        width: 5rem;
+        height: 90%;
        
     }
     .caja-imagenes img{
@@ -427,7 +427,7 @@ input[type="email"]:focus {
 
     .caja-imagenes{
         position: relative;
-        width: 7rem;
+        width: 5rem;
         height: 90%;
        
     }
@@ -451,7 +451,7 @@ input[type="email"]:focus {
         display: flex;
         align-items: center;
         flex-direction: column;
-        top: 100px;
+        top: 200px;
         height: 1000px;
 
     }
@@ -465,14 +465,14 @@ input[type="email"]:focus {
     }
 
     .des-imagenes{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
        
     }
 
     .caja-imagenes{
         position: relative;
-        width: 6rem;
-        height: 95%;
+        width: 3.5rem;
+        height: 75%;
        
     }
     .caja-imagenes img{
