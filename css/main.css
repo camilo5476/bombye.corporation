@@ -129,7 +129,7 @@ li button{
     column-gap: 5%;
     row-gap: 100px;
     padding: 8%;
-    padding-right: 15%;
+    padding-right: 12%;
 }
 
 
@@ -137,7 +137,7 @@ li button{
     position: relative;
     left: 20%;
     height: 400px;
-    width: 400px;
+    width: 300px;
 
 }
 
@@ -278,21 +278,24 @@ li button{
         position: relative;
         background-image: url(/images/logo/logo.jpg);
         background-size: 100% 100%;
-        width: 20%;
-        height: 10%;
+        width: 40%;
+        height: 5%;
         top: 4%;
         border-radius: 10px;
     
     }
     .contenedor-productos {
+        position: relative;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
         row-gap: 50px;
+        top: 200px;
+
     }
 
     #qw{
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         left: 10%;
 
     }
