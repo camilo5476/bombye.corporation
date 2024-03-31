@@ -383,6 +383,7 @@ function drawkp(e) {
     // Llamar a la función enviarDatosAPI para enviar datos a la API
     document.querySelectorAll(".botones").forEach((contenedor) => {
         const botonPago = document.createElement("button");
+        botonPago.classList.add("pagosepay")
         botonPago.textContent = "Pagar con ePayco";
         botonPago.addEventListener("click", function() {
            

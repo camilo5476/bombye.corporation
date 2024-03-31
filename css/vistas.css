@@ -300,6 +300,11 @@ input[type="email"]:focus {
     color: red;
 }
 
+.pagosepay{
+    color: #000000;
+    text-transform: uppercase;
+}
+
 /* Media Query para 1400px */
 @media (max-width: 1400px) {
     .caja-individual {

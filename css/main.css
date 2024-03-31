@@ -175,7 +175,10 @@ li button{
     cursor: pointer;
 }
 
-
+.botones{
+    color: #14171a;
+    text-transform: uppercase;
+}
 
 
 

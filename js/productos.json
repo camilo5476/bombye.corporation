@@ -8,7 +8,6 @@
             "id": "electronico"
         },
         "precio": 55000,
-        "colores": ["./images/audifonos/1.jpg","./images/audifonos/1.1.jpg","./images/audifonos/1.2.jpg"],
         "info": "Audífonos E50 $55.000 Bluetooth 5.1 estéreo Sensor digital Estilo: en la oreja Principio de vocalismo: Díamica Origen: China continental Botón de Control: Sí Comunicación: inalámbrica Control de volumen: Sí Tipo de enchufe: Tipo de línea Material de las almohadillas para auriculares: Silicona Tipo inalámbrico: Bluetooth Longitud de línea: 0 m Lista de paquetes: Cable de carga, Estuche de carga, Manual del usuario Códecs: ac Diámetro del conductor: 10 mm Resistencia: 32 Sensibilidad: 128dB Es inalámbrico: Sí Conectores: usb Tipo de auriculares: Semi-abierto Versión de Bluetooth: 5.1 Distorsión armónica Total: 1% Método de carga: Estuche de carga Salida máxima: 1mW Aplicación de soporte: No Función: deportes, para teléfono móvil, para videojuegos, auriculares comunes Luces led, Duración batería auriculares = 3.5 H Duración batería caja = 3 cargas + Contesta llamadas, Con Micrófono: Sí Características: cancelación de ruido activa, resistente al agua salpicaduras. No sumergir en líquidos",
         "numerodecantidades": 10,
         "tallaInicial":  37,
@@ -26,7 +25,6 @@
             "id": "sandalias"
         },
         "precio":80000,
-        "colores": ["./images/zandalias/2.jpg","./images/zandalias/2.1.jpg","./images/zandalias/2.2.jpg"],
         "info" : "Dama : Tallas 35 a la 40,  Precio 88.000 pesos ",
         "numerodecantidades": 10,
         "tallaInicial":  35,
@@ -41,7 +39,6 @@
             "id": "sandalias"
         },
         "precio":20000,
-        "colores":["./images/zandalias/3.jpg","./images/zandalias/3.1.jpg","./images/zandalias/3.2.jpg" ,"./images/zandalias/3.3jpg"],
         "info" : "📍Sandalias planas☝ 📍Niñas: Tallas 27 a la 33👣 , Precio 20.000 pesos 💵",
         "numerodecantidades": 10,
         "tallaInicial":  27,
@@ -99,7 +96,6 @@
             "id": "zapatillas"
         },
         "precio":115000,
-        "colores": ["./images/zapatillas/1.jpg","./images/zapatillas/1.1.jpg"],
         "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
         "numerodecantidades": 10,
         "tallaInicial":  37,
@@ -115,7 +111,6 @@
             "id": "zapatillas"
         },
         "precio": 115000,
-        "colores":["./images/zapatillas/2.jpg","./images/zapatillas/2.1.jpg"],
         "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
         "numerodecantidades": 10,
         "tallaInicial":  37,
@@ -131,7 +126,6 @@
             "id":"zapatillas"
         },
         "precio":115000,
-        "colores": ["./images/zapatillas/3.jpg","./images/zapatillas/3.1.jpg"],
         "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
         "numerodecantidades": 10,
         "tallaInicial":  37,
@@ -146,7 +140,6 @@
             "id":"zapatillas"
         },
         "precio": 128000,
-        "colores":["./images/zapatillas/4.jpg","./images/zapatillas/4.1.jpg","./images/zapatillas/4.2.jpg" ],
         "info" : "Dama y Caballero: Tallas 37 a la 43👣 , Precio: 128.000 pesos 💵",
         "numerodecantidades": 10,
         "tallaInicial":  37,
@@ -161,7 +154,6 @@
             "id": "zapatillas"
         },
         "precio": 45000,
-        "colores": ["./images/zapatillas/14.jpg","./images/zapatillas/14.1.jpg", "./images/zapatillas/14.2.jpg"],
         "info" : "📍Adidas☝ 📍Dama y Caballero, Tallas: 35 a la 43👣, Precio: 45.000 pesos 💵",
         "numerodecantidades": 10,
         "tallaInicial":  35,
@@ -176,7 +168,6 @@
             "id": "zapatillas"
         },
         "precio": 95000,
-        "colores": ["./images/zapatillas/13.jpg","./images/zapatillas/13.1.jpg"],
         "info" : "🍯 JORDAN RETRO 1 🍯 Todas Las Tallas Disponibles Para Dama &  Caballero㊙ ",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -191,7 +182,6 @@
             "id":"zapatillas"
         },
         "precio": 95000,
-        "colores": ["blanco con gris "],
         "info" : "🍯 JORDAN RETRO 1 PARIS 🍯 Todas Las Tallas Disponibles Para Dama &  Caballero㊙ ",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -206,7 +196,6 @@
             "id":"zapatillas"
         },
         "precio": 155000,
-        "colores": ["blanco con negro "],
         "info" : "Dolce & Gabanna Dama  calzado: mujeres",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -221,7 +210,6 @@
             "id": "zapatillas"
         },
         "precio": 155000,
-        "colores": ["blanco con tonos rojos "],
         "info" : "Dolce & Gabanna Dama  calzado: mujeres",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -236,7 +224,6 @@
             "id":"zapatillas"
         },
         "precio": 155000,
-        "colores": ["blanco con negro y rojo con detalles de dorado "],
         "info" : "Dolce & Gabanna Dama  calzado: mujeres, blanco con negro y rojo con detalles de dorado",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -251,7 +238,6 @@
             "id": "zapatillas"
         },
         "precio": 155000,
-        "colores": ["blanco con dorado con la palabra love"],
         "info" : "Dolce & Gabanna Dama  calzado: mujeres, blanco con dorado con la palabra love",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -267,7 +253,6 @@
             "id":"zapatillas"
         },
         "precio": 165000,
-        "colores": ["naranja con negro y figuras"],
         "info" : "Nike mercurial Air zoom para dama y hombre ",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -284,7 +269,6 @@
             "id": "zapatillas"
         },
         "precio": 165000,
-        "colores": ["color azul aguamarina con tonos morados y blancos"],
         "info" : "Nike mercurial Air zoom para dama y hombre ",
         "numerodecantidades": 10,
         "tallaInicial":  36,
@@ -299,7 +283,6 @@
             "id":"zapatillas"
         },
         "precio": 195000,
-        "colores": ["logo de nike de blanco con cafe", "logo de nike verde con rosa" , "logo de nike negro con negro"],
         "info" : "Nike tiempo aluminio ",
         "numerodecantidades": 10,
         "tallaInicial":  40,
@@ -314,7 +297,6 @@
             "id": "electronico"
         },
         "precio": 95000,
-        "colores": ["dorado con tonos blnacos  ", "blanco con  tonos dorados  ", "color negro  ", "color rojo  ", "color gris  ", "color rojo con tonos rojos suaves", "  color azul plateado", "  color azul plateado, con tonos de azul/aguamarina", "  color verde", "  color blanco"],
         "info" : "Réplica 1.1 De Los AirPods Max; reinventan los audífonos de diadema. El controlador dinámico diseñado por Apple te ofrece un sonido inmersivo de alta fidelidad. Cada elemento, desde la diadema hasta las almohadillas, está pensado para brindarte un ajuste excepcional. La Cancelación Activa de Ruido líder en la industria bloquea el ruido exterior, y el modo Ambiente te permite escuchar todo lo que ocurre a tu alrededor.  Conectividad: Inalámbrico.    Caracteristicas: Cancelación del ruido, Circumaurales, Con batería recargable, Con efecto de graves, Con estuche de carga, Con micrófono, Sonido envolvente.    Tipo de auricular: Abierto Tecnología del controlador de los auriculares: Dinámico", 
         "numerodecantidades": 10,
         "tallaInicial":  0,
@@ -329,7 +311,6 @@
             "id": "relojes"
         },
         "precio": 48000,
-        "colores": ["reloj blanco con azul", "reloj negro con tonos dorados", "reloj azul con tonos dorados", "relog negro con tonos plateados", "reloj negro con blanco"],
         "info" : "▪ Reloj De Nueva Colección Con Calendario Y Segundero Funcional, Cristal En Mineral Y Pulso Acerado,          ▪ Adquiere El Estuche De Lujo Contramarcado Por $12.000", 
         "numerodecantidades": 10,
         "tallaInicial":  0,
@@ -344,7 +325,6 @@
             "id": "relojes"
         },
         "precio": 65000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Reloj Gama Alta Con Múltiples Funciones: Doble Hora, Fecha, Cronómetro, Alarma Y Luz; Pulso Acerado , RESISTENTE AL AGUA", 
         "numerodecantidades": 10,
         "tallaInicial":  0,
@@ -359,7 +339,6 @@
             "id": "evo"
         },
         "precio": 65000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Disponibles 💯🔥(Pocas unidades )🏃🏃‍♀, Calidad Antifluidos FULL💯", 
         "numerodecantidades": 10,
         "tallaInicial":  0,
@@ -374,7 +353,6 @@
             "id": "evo"
         },
         "precio": 65000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Disponibles 💯🔥(Pocas unidades )🏃🏃‍♀, Calidad Antifluidos FULL💯", 
         "numerodecantidades": 10,
         "tallaInicial":  0,
@@ -389,7 +367,6 @@
             "id": "evo"
         },
         "precio": 45000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Pantalonetas para caballero 😎importadas 😎🔥", 
         "numerodecantidades": 10,
         "tallaInicial": "m , l",
@@ -404,7 +381,6 @@
             "id": "evo"
         },
         "precio": 55000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "💥camibusos importados tela fría tallas surtidas 😎🔥", 
         "numerodecantidades": 10,
         "tallaInicial": "m , l",
@@ -419,7 +395,6 @@
             "id": "evo"
         },
         "precio": 55000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "💥camibusos importados tela fría tallas surtidas 😎🔥", 
         "numerodecantidades": 10,
         "tallaInicial": "m , l",
@@ -434,7 +409,6 @@
             "id": "evo"
         },
         "precio": 45000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" :"💥camibusos importados tela fría tallas surtidas 😎🔥",  
         "numerodecantidades": 10,
         "tallaInicial": "m , l",
@@ -449,7 +423,6 @@
             "id": "evo"
         },
         "precio": 55000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Camiseta oversay 😎para caballero importadas ", 
         "numerodecantidades": 10,
         "tallaInicial": "m , l",
@@ -464,7 +437,6 @@
             "id": "evo"
         },
         "precio": 125000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "CONJUNTO ALGODÓN 🍓🍓🍓🍓🍓🍓🍓, pocas unidades", 
         "numerodecantidades": 10,
         "tallaInicial": "M",
@@ -479,7 +451,6 @@
             "id": "evo"
         },
         "precio": 125000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "CONJUNTO ALGODÓN 🍓🍓🍓🍓🍓🍓🍓, pocas unidades", 
         "numerodecantidades": 10,
         "tallaInicial": "M",
@@ -494,7 +465,6 @@
             "id": "evo"
         },
         "precio": 85000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "🔥CAMISA BEISBOLERA㊙", 
         "numerodecantidades": 10,
         "tallaInicial": "M",
@@ -509,7 +479,6 @@
             "id": "evo"
         },
         "precio": 85000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "🔥CAMISA BEISBOLERA㊙", 
         "numerodecantidades": 10,
         "tallaInicial": "M",
@@ -524,7 +493,6 @@
             "id": "zapatillas"
         },
         "precio": 68000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "📍Nike Dunk☝ 📍, Dama y Caballero", 
         "numerodecantidades": 10,
         "tallaInicial": 35,
@@ -539,7 +507,6 @@
             "id": "zapatillas"
         },
         "precio": 65000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "📍Nike ☝ 📍, Dama y Caballero, Tallas 35 a la 43👣", 
         "numerodecantidades": 10,
         "tallaInicial": 35,
@@ -554,7 +521,6 @@
             "id": "zapatillas"
         },
         "precio": 75000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "👽💥 REPOSICIÓN ADIDAS SIKAGE, 📍 Tallas del 27 al 33 70.000👶🏻, 🔥 Tallas del 34 al 43 75.000💵, ⚡Hermosos detalles Importados💯", 
         "numerodecantidades": 10,
         "tallaInicial": 27,
@@ -569,7 +535,6 @@
             "id": "zapatillas"
         },
         "precio": 70000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "caballero", 
         "numerodecantidades": 10,
         "tallaInicial": 37,
@@ -584,7 +549,6 @@
             "id": "zapatillas"
         },
         "precio": 68000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "caballero", 
         "numerodecantidades": 10,
         "tallaInicial": 37,
@@ -599,7 +563,6 @@
             "id": "zapatos"
         },
         "precio": 78000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "📍 Mocasin 📍100% Cuero, Caballero 🤵🏻‍♂, Tallas 37 a la 43 👣", 
         "numerodecantidades": 10,
         "tallaInicial": 37,
@@ -614,7 +577,6 @@
             "id": "zapatos"
         },
         "precio": 78000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "▪Talla 37 al 42👣, ▪ Precio: 65.000 pesos💸,  ▪ Pegado Vulcanizado⚡", 
         "numerodecantidades": 10,
         "tallaInicial": 37,
@@ -629,7 +591,6 @@
             "id": "zapatos"
         },
         "precio": 78000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "✅Llego Nuevo Calzado Velez👞  Nueva colección, Para caballero💪 , Fotos reales💯 , Especificaciones: Cosido 🧵 Sintético ", 
         "numerodecantidades": 10,
         "tallaInicial": 37,
@@ -644,7 +605,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
@@ -659,7 +619,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
@@ -674,7 +633,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
@@ -689,7 +647,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
@@ -705,7 +662,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
@@ -720,7 +676,6 @@
             "id": "bolsos"
         },
         "precio": 130000,
-        "colores": ["dorado", "dorado con blanco", "dorado con azul y blanco", "blanco", "blanco con negro"],
         "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
         "numerodecantidades": 10,
         "tallaInicial": 0,
