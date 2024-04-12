@@ -143,7 +143,7 @@ function actualizarCompra (){
 
 }
 
-
+localStorage.setItem("pagos", "")
 
 function paypago (e) {
     let id = e.currentTarget.dataset.id;
@@ -153,34 +153,14 @@ function paypago (e) {
         let preciototal = pro.precio * pro.cantidad;
         return preciototal;
     }
+    const prexio = precio()
+    pro.precio = prexio
 
-    var handler = ePayco.checkout.configure({
-        key: 'd9bb50a26f7e056ab82328afbe42c474',
-        test: false // Cambiar a false en producción
-    });
+  
+    let json = JSON.stringify(pro)
+    localStorage.setItem("pagos", json)
+    window.location.href = "../pagos.html"
     
-    if (!handler) {
-        console.error("Error: El token no está configurado correctamente. Verifica la configuración del token.");
-    } else {
-        let total = precio(); // Obtener el precio total
-        
-        var data = {
-            name: pro.id,
-            description: pro.info,
-            currency: "cop",
-            amount: total, // Usar el precio total obtenido de la función precio
-            tax_base: "4000",
-            tax: "500",
-            tax_ico: "500",
-            country: "co",
-            lang: "en",
-            external: "false",
-            acepted : "/compra.html",
-            rejected: "/comprafallida.html",
-            methodsDisable: [ "PSE","SP","CASH"]
-        };
 
-        // Abrir el formulario de pago
-        handler.open(data);
-    }
+
 }

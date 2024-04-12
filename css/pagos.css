@@ -1,0 +1,134 @@
+/* Estilos generales para el cuerpo y elementos principales */
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.padre {
+    display: flex;
+    justify-content: space-around; /* Distribuye las cajas hijos de manera equitativa */
+    align-items: flex-start; /* Alinea los hijos en la parte superior */
+    height: 100vh; /* Toma el 100% del alto del viewport */
+}
+
+/* Estilos para el contenedor de la información del producto */
+.root_double {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+/* Estilos para el contenedor del resumen de la transacción */
+.normal {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+.normal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #1e0072;
+    border-radius: 4px;
+}
+
+.epayuu {
+    width: 100%;
+    height: 2rem;
+    background-color: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.epayuu:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de información del cliente */
+.formulario {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #4e0083;
+    border-radius: 8px;
+    background-color: #242323;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.campo input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para las imágenes de productos */
+.des-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja-imagenes {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.caja-imagenes img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #1e0072;
+    border-radius: 4px;
+}
+
+/* Estilos para mensajes de error */
+.men {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

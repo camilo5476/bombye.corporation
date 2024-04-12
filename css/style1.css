@@ -238,6 +238,7 @@
     color: var(--color-accent1);
     font-size: 40px;
     left: 150px;
+    cursor: pointer;
 }
 
 #ade,
@@ -247,6 +248,7 @@
     margin-top: 230px;
     color: var(--color-accent1);
     font-size: 40px;
+    cursor: pointer;
 }
 
 

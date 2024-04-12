@@ -188,6 +188,39 @@
 }
 
 
+#lista{
+    position: absolute;
+    right: 30vh;
+    bottom: 15px;
+    width: 100px;
+    height: 30px;
+    color: #000000;
+}
+#lista option {
+    color: #333; /* Color por defecto del texto de las opciones */
+    background-color: #a10000; /* Color por defecto del fondo de las opciones */
+}
+
+#lista option:checked {
+    display: none; /* Oculta la opción seleccionada */
+}
+
+#lista option[value="rojo"] {
+    color: red; /* Cambia el color del texto de la opción "rojo" a rojo */
+    background-color: pink; /* Cambia el color de fondo de la opción "rojo" a rosa */
+}
+
+#lista option[value="verde"] {
+    color: green; /* Cambia el color del texto de la opción "verde" a verde */
+    background-color: lightgreen; /* Cambia el color de fondo de la opción "verde" a verde claro */
+}
+
+#lista option[value="azul"] {
+    color: blue; /* Cambia el color del texto de la opción "azul" a azul */
+    background-color: lightblue; /* Cambia el color de fondo de la opción "azul" a azul claro */
+}
+
+
 .formulario {
     position: relative;
     top: 200px;
