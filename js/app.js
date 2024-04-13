@@ -94,6 +94,7 @@ document.querySelectorAll("#form").forEach((form) => {
                         nombre: nombre,
                         apellido: apellido,
                         celular: celular,
+                        correo : correo,
                         direccion: direccion,
                         ciudad: ciudad,
                         pais: pais,
