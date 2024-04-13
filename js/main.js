@@ -218,6 +218,22 @@ function drawkp(e) {
     </div>
  
   `;
+    
+        
+    const select = document.getElementById('lista');
+
+    let talla2222222 = pro.tallas
+    console.log(talla2222222)
+
+    // Itera sobre el array de opciones y crea un elemento <option> por cada una
+    talla2222222.forEach(opcion => {
+        const optionElement = document.createElement('option'); // Crea un elemento <option>
+        optionElement.value = opcion.value; // Establece el valor de la opción
+        optionElement.textContent = opcion.text; // Establece el texto visible de la opción
+        select.appendChild(optionElement); // Agrega la opción al select
+    });
+
+
 
 
     const botonmas = document.querySelectorAll(".mas");

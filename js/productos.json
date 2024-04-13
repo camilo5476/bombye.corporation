@@ -1,642 +1,127 @@
 [
     {
+        "id": "sacos 0_01",
+        "titulo": "Busos de algodon monaco",
+        "imagen": [
+            "./images/urban/1.jpg",
+            "./images/urban/1.1.jpg",
+            "./images/urban/1.2.jpg",
+            "./images/urban/1.2.jpg"
+        ],
+        "categoria": {
+            "nombre": "Audífonos",
+            "id": "urban"
+        },
+        "precio": 70000,
+        "info": "Busos de algodon monaco con estampados de one piece",
+        "numerodecantidades": 10,
+        "colores": ["Rojo", "Azul", "Negro"],
+        "tallas": [
+            {"value": "S", "text": "m"},
+            {"value": "M", "text": "l"},
+            {"value": "L", "text": "xl"}
+        ]
+    },
+    {
         "id": "Audifonos-E50",
         "titulo": "Audífonos E50",
-        "imagen": ["./images/audifonos/1.jpg","./images/audifonos/1.1.jpg","./images/audifonos/1.2.jpg"],
+        "imagen": [
+            "./images/audifonos/1.jpg",
+            "./images/audifonos/1.1.jpg",
+            "./images/audifonos/1.2.jpg"
+        ],
         "categoria": {
             "nombre": "Audífonos",
             "id": "electronico"
         },
         "precio": 55000,
-        "info": "Audífonos E50 $55.000 Bluetooth 5.1 estéreo Sensor digital Estilo: en la oreja Principio de vocalismo: Díamica Origen: China continental Botón de Control: Sí Comunicación: inalámbrica Control de volumen: Sí Tipo de enchufe: Tipo de línea Material de las almohadillas para auriculares: Silicona Tipo inalámbrico: Bluetooth Longitud de línea: 0 m Lista de paquetes: Cable de carga, Estuche de carga, Manual del usuario Códecs: ac Diámetro del conductor: 10 mm Resistencia: 32 Sensibilidad: 128dB Es inalámbrico: Sí Conectores: usb Tipo de auriculares: Semi-abierto Versión de Bluetooth: 5.1 Distorsión armónica Total: 1% Método de carga: Estuche de carga Salida máxima: 1mW Aplicación de soporte: No Función: deportes, para teléfono móvil, para videojuegos, auriculares comunes Luces led, Duración batería auriculares = 3.5 H Duración batería caja = 3 cargas + Contesta llamadas, Con Micrófono: Sí Características: cancelación de ruido activa, resistente al agua salpicaduras. No sumergir en líquidos",
-        "numerodecantidades": 10
-    }
-    ,
-
+        "info": "Audífonos E50 $55.000 Bluetooth 5.1 estéreo Sensor digital Estilo: en la oreja ...",
+        "numerodecantidades": 10,
+        "colores": ["Negro", "Blanco"],
+        "tallas": [
+            {"value": "Única", "text": "Talla Única"}
+        ]
+    },
     {
         "id": "zandalias-01",
         "titulo": "Puma",
-        "imagen": ["./images/zandalias/2.jpg","./images/zandalias/2.1.jpg","./images/zandalias/2.2.jpg"],
+        "imagen": [
+            "./images/zandalias/2.jpg",
+            "./images/zandalias/2.1.jpg",
+            "./images/zandalias/2.2.jpg"
+        ],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
         },
-        "precio":80000,
-        "info" : "Dama : Tallas 35 a la 40,  Precio 88.000 pesos ",
-        "numerodecantidades": 10
-       
+        "precio": 80000,
+        "info": "Dama: Tallas 35 a la 40, Precio 88.000 pesos",
+        "numerodecantidades": 10,
+        "colores": ["Negro", "Blanco", "Rojo"],
+        "tallas": [
+            {"value": "35", "text": "Talla 35"},
+            {"value": "36", "text": "Talla 36"},
+            {"value": "37", "text": "Talla 37"},
+            {"value": "38", "text": "Talla 38"},
+            {"value": "39", "text": "Talla 39"},
+            {"value": "40", "text": "Talla 40"}
+        ]
     },
     {
         "id": "zandalias-02",
         "titulo": "zandalias planas - niña",
-        "imagen": ["./images/zandalias/3.jpg","./images/zandalias/3.1.jpg","./images/zandalias/3.2.jpg" ,"./images/zandalias/4.jpg"],
+        "imagen": [
+            "./images/zandalias/3.jpg",
+            "./images/zandalias/3.1.jpg",
+            "./images/zandalias/3.2.jpg",
+            "./images/zandalias/4.jpg"
+        ],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
         },
-        "precio":20000,
-        "info" : "📍Sandalias planas☝ 📍Niñas: Tallas 27 a la 33👣 , Precio 20.000 pesos 💵",
-        "numerodecantidades": 10
+        "precio": 20000,
+        "info": "Sandalias planas para niñas: Tallas 27 a la 33, Precio 20.000 pesos",
+        "numerodecantidades": 10,
+        "colores": ["Rosa", "Amarillo", "Verde"],
+        "tallas": [
+            {"value": "27", "text": "Talla 27"},
+            {"value": "28", "text": "Talla 28"},
+            {"value": "29", "text": "Talla 29"},
+            {"value": "30", "text": "Talla 30"},
+            {"value": "31", "text": "Talla 31"},
+            {"value": "32", "text": "Talla 32"},
+            {"value": "33", "text": "Talla 33"}
+        ]
     },
     {
         "id": "zandalias-03",
         "titulo": "zandalias planas - niña",
-        "imagen":  ["./images/zandalias/5.jpg","./images/zandalias/5.1.jpg", "./images/zandalias/5.2.jpg"],
+        "imagen": [
+            "./images/zandalias/5.jpg",
+            "./images/zandalias/5.1.jpg",
+            "./images/zandalias/5.2.jpg"
+        ],
         "categoria": {
             "nombre": "zandalias",
             "id": "sandalias"
         },
-        "precio":20000,
-        "info" : "📍Sandalias planas☝ 📍Niñas: Tallas 27 a la 33👣 , Precio 20.000 pesos 💵",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zandalias-04",
-        "titulo":"zandalias planas - dama",
-        "imagen":  ["./images/zandalias/6.jpg","./images/zandalias/6.1.jpg", "./images/zandalias/6.2.jpg","./images/zandalias/6.3.jpg", "./images/zandalias/6.4.jpg"],
-        "categoria": {
-            "nombre": "zandalias",
-            "id": "sandalias"
-        },
-        "precio":38000,
-        "info" : "📍Sandalias☝ 📍, Dama , Tallas 35 a la 40👣, Precio 38.000 pesos 💵",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zandalias-05",
-        "titulo": "zandalias planas - dama",
-        "imagen":  ["./images/zandalias/7.jpg","./images/zandalias/7.1.jpg", "./images/zandalias/7.2.jpg","./images/zandalias/7.3.jpg", "./images/zandalias/7.4.jpg"],
-        "categoria": {
-            "nombre": "zandalias",
-            "id": "sandalias"
-        },
-        "precio":38000,
-        "info" : "📍Sandalias☝ 📍, Dama , Tallas 35 a la 40👣, Precio 38.000 pesos 💵",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-01",
-        "titulo": "HUGO BOSS",
-        "imagen": ["./images/zapatillas/1.jpg","./images/zapatillas/1.1.jpg"],
-        "categoria": {
-            "nombre": "zapatillas",
-            "id": "zapatillas"
-        },
-        "precio":115000,
-        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
-        "numerodecantidades": 10
-    },
-
-    {
-        "id": "zapatillas-02",
-        "titulo": "HUGO BOSS",
-        "imagen":["./images/zapatillas/2.jpg","./images/zapatillas/2.1.jpg"],
-        "categoria": {
-            "nombre": "zapatillas",
-            "id": "zapatillas"
-        },
-        "precio": 115000,
-        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
-        "numerodecantidades": 10
-    },
-
-    {
-        "id": "zapatillas-03",
-        "titulo": "HUGO BOSS",
-        "imagen":["./images/zapatillas/3.jpg","./images/zapatillas/3.1.jpg"],
-        "categoria": {
-            "nombre": "zapatillas",
-            "id":"zapatillas"
-        },
-        "precio":115000,
-        "info" : "▪Talla 37 al 43👣,  ▪ Precio: 115.000 pesos 💸,   ▪ Pegado Vulcanizado🤩 ",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-04",
-        "titulo": "HUGO BOSS",
-        "imagen":["./images/zapatillas/4.jpg","./images/zapatillas/4.1.jpg","./images/zapatillas/4.2.jpg" ],
-        "categoria": {
-            "nombre": "zapatillas",
-            "id":"zapatillas"
-        },
-        "precio": 128000,
-        "info" : "Dama y Caballero: Tallas 37 a la 43👣 , Precio: 128.000 pesos 💵",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-05",
-        "titulo": "Adidas",
-        "imagen":["./images/zapatillas/14.jpg","./images/zapatillas/14.1.jpg"],
-        "categoria": {
-            "nombre": "Adidas",
-            "id": "zapatillas"
-        },
-        "precio": 45000,
-        "info" : "📍Adidas☝ 📍Dama y Caballero, Tallas: 35 a la 43👣, Precio: 45.000 pesos 💵",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-06",
-        "titulo": "JORDAN RETRO 1",
-        "imagen":["./images/zapatillas/13.jpg","./images/zapatillas/13.1.jpg"],
-        "categoria": {
-            "nombre": "JORDAN RETRO 1",
-            "id": "zapatillas"
-        },
-        "precio": 95000,
-        "info" : "🍯 JORDAN RETRO 1 🍯 Todas Las Tallas Disponibles Para Dama &  Caballero㊙ ",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-07",
-        "titulo": " JORDAN RETRO 1 PARIS",
-        "imagen":["./images/zapatillas/12.jpg"],
-        "categoria": {
-            "nombre": " JORDAN RETRO 1 PARIS",
-            "id":"zapatillas"
-        },
-        "precio": 95000,
-        "info" : "🍯 JORDAN RETRO 1 PARIS 🍯 Todas Las Tallas Disponibles Para Dama &  Caballero㊙ ",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-08",
-        "titulo": " Dolce & Gabanna Dama🍒",
-        "imagen":["./images/zapatillas/11.jpg"],
-        "categoria": {
-            "nombre": "Dolce & Gabanna Dama",
-            "id":"zapatillas"
-        },
-        "precio": 155000,
-        "info" : "Dolce & Gabanna Dama  calzado: mujeres",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-09",
-        "titulo": " Dolce & Gabanna Dama🍒",
-        "imagen":["./images/zapatillas/10.jpg"],
-        "categoria": {
-            "nombre": "Dolce & Gabanna Dama",
-            "id": "zapatillas"
-        },
-        "precio": 155000,
-        "info" : "Dolce & Gabanna Dama  calzado: mujeres",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-11",
-        "titulo": " Dolce & Gabanna Dama🍒",
-        "imagen":["./images/zapatillas/9.jpg"],
-        "categoria": {
-            "nombre": "Dolce & Gabanna Dama",
-            "id":"zapatillas"
-        },
-        "precio": 155000,
-        "info" : "Dolce & Gabanna Dama  calzado: mujeres, blanco con negro y rojo con detalles de dorado",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-12",
-        "titulo": " Dolce & Gabanna Dama🍒",
-        "imagen":["./images/zapatillas/8.jpg", "./images/zapatillas/8.1.jpg"],
-        "categoria": {
-            "nombre": "Dolce & Gabanna Dama",
-            "id": "zapatillas"
-        },
-        "precio": 155000,
-        "info" : "Dolce & Gabanna Dama  calzado: mujeres, blanco con dorado con la palabra love",
-        "numerodecantidades": 10
-    },
-
-    {
-        "id": "zapatillas-13",
-        "titulo": " Nike mercurial Air zoom",
-        "imagen":["./images/zapatillas/7.jpg"],
-        "categoria": {
-            "nombre":  "Nike mercurial Air zoom",
-            "id":"zapatillas"
-        },
-        "precio": 165000,
-        "info" : "Nike mercurial Air zoom para dama y hombre ",
-        "numerodecantidades": 10
-    },
-
-    
-    {
-        "id": "zapatillas-14",
-        "titulo": " Nike mercurial Air zoom",
-        "imagen":["./images/zapatillas/6.jpg"],
-        "categoria": {
-            "nombre":  "Nike mercurial Air zoom",
-            "id": "zapatillas"
-        },
-        "precio": 165000,
-        "info" : "Nike mercurial Air zoom para dama y hombre ",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-15",
-        "titulo": " Nike tiempo aluminio",
-        "imagen":["./images/zapatillas/5.jpg", "./images/zapatillas/5.1.jpg", "./images/zapatillas/5.2jpg"],
-        "categoria": {
-            "nombre":  "Nike tiempo aluminio",
-            "id":"zapatillas"
-        },
-        "precio": 195000,
-        "info" : "Nike tiempo aluminio ",
-        "numerodecantidades": 10
-    },
-    {
-        "id": "audifonos-03",
-        "titulo": " AIRPODS MAX",
-        "imagen":["./images/audifonos/2.jpg", "./images/audifonos/2.1.jpg", "./images/audifonos/2.3.jpg", "./images/audifonos/2.4.jpg", "./images/audifonos/2.5.jpg", "./images/audifonos/2.6.jpg", "./images/audifonos/2.7.jpg", "./images/audifonos/2.8.jpg", "./images/audifonos/2.9.jpg", "./images/audifonos/2.9.1.jpg","./images/audifonos/2.9.2.jpg", "./images/audifonos/2.9.3.jpg", "./images/audifonos/2.9.4.jpg","./images/audifonos/2.9.5.jpg", "./images/audifonos/2.9.6.jpg"],
-        "categoria": {
-            "nombre":  "AIRPODS MAX",
-            "id": "electronico"
-        },
-        "precio": 95000,
-        "info" : "Réplica 1.1 De Los AirPods Max; reinventan los audífonos de diadema. El controlador dinámico diseñado por Apple te ofrece un sonido inmersivo de alta fidelidad. Cada elemento, desde la diadema hasta las almohadillas, está pensado para brindarte un ajuste excepcional. La Cancelación Activa de Ruido líder en la industria bloquea el ruido exterior, y el modo Ambiente te permite escuchar todo lo que ocurre a tu alrededor.  Conectividad: Inalámbrico.    Caracteristicas: Cancelación del ruido, Circumaurales, Con batería recargable, Con efecto de graves, Con estuche de carga, Con micrófono, Sonido envolvente.    Tipo de auricular: Abierto Tecnología del controlador de los auriculares: Dinámico", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "reloj-01",
-        "titulo": "FOSSIL U.S.A.",
-        "imagen":["./images/relojes/2.jpg", "./images/relojes/2.1.jpg", "./images/relojes/2.2.jpg", "./images/relojes/2.3.jpg","./images/relojes/2.4.jpg", "./images/relojes/2.5.jpg", "./images/relojes/2.6.jpg", "./images/relojes/2.7.jpg", "./images/relojes/2.8.jpg", "./images/relojes/2.9.jpg"],
-        "categoria": {
-            "nombre":  "FOSSIL U.S.A.",
-            "id": "relojes"
-        },
-        "precio": 48000,
-        "info" : "▪ Reloj De Nueva Colección Con Calendario Y Segundero Funcional, Cristal En Mineral Y Pulso Acerado,          ▪ Adquiere El Estuche De Lujo Contramarcado Por $12.000", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "reloj-02",
-        "titulo": "CASIO 2024 Model",
-        "imagen":["./images/relojes/1.jpg", "./images/relojes/1.1.jpg", "./images/relojes/1.2.jpg", "./images/relojes/1.3.jpg","./images/relojes/1.4.jpg"],
-        "categoria": {
-            "nombre":  "CASIO 2024 Model",
-            "id": "relojes"
-        },
-        "precio": 65000,
-        "info" : "Reloj Gama Alta Con Múltiples Funciones: Doble Hora, Fecha, Cronómetro, Alarma Y Luz; Pulso Acerado , RESISTENTE AL AGUA", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "gorra-01",
-        "titulo": "PAVA 1.1 AMIRI🍓🍓🍓",
-        "imagen":["./images/ropaevo/1.jpg", "./images/ropaevo/1.1.jpg", "./images/ropaevo/1.2.jpg"],
-        "categoria": {
-            "nombre":  "PAVA 1.1 AMIRI",
-            "id": "evo"
-        },
-        "precio": 65000,
-        "info" : "Disponibles 💯🔥(Pocas unidades )🏃🏃‍♀, Calidad Antifluidos FULL💯", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "gorra-02",
-        "titulo": "PAVA 1.1 AMIRI🍓🍓🍓",
-        "imagen":["./images/ropaevo/2.jpg", "./images/ropaevo/2.1.jpg", "./images/ropaevo/2.2.jpg", "./images/ropaevo/2.3.jpg" , "./images/ropaevo/2.4.jpg"],
-        "categoria": {
-            "nombre":  "PAVA 1.1 AMIRI",
-            "id": "evo"
-        },
-        "precio": 65000,
-        "info" : "Disponibles 💯🔥(Pocas unidades )🏃🏃‍♀, Calidad Antifluidos FULL💯", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "pantaloneta-01",
-        "titulo": "pantalonetas de caballero",
-        "imagen":["./images/ropaevo/3.1.jpg", "./images/ropaevo/3.2.jpg", "./images/ropaevo/3.3.jpg", "./images/ropaevo/3.4.jpg" , "./images/ropaevo/3.5.jpg, ", "./images/ropaevo/3.6.jpg", "./images/ropaevo/3.7.jpg", "./images/ropaevo/3.8.jpg", "./images/ropaevo/3.9.jpg", "./images/ropaevo/3.9.1.jpg"],
-        "categoria": {
-            "nombre":  "pantalonetas de caballero",
-            "id": "evo"
-        },
-        "precio": 45000,
-        "info" : "Pantalonetas para caballero 😎importadas 😎🔥", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "camibusos-01",
-        "titulo": "camibusos",
-        "imagen":["./images/ropaevo/4.1.jpg", "./images/ropaevo/4.2.jpg", "./images/ropaevo/4.3.jpg", "./images/ropaevo/4.4.jpg" , "./images/ropaevo/4.5.jpg", "./images/ropaevo/4.6.jpg", "./images/ropaevo/4.7.jpg", "./images/ropaevo/4.8.jpg", "./images/ropaevo/4.8.1.jpg"],
-        "categoria": {
-            "nombre":  "camibusos",
-            "id": "evo"
-        },
-        "precio": 55000,
-        "info" : "💥camibusos importados tela fría tallas surtidas 😎🔥", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "camibusos-02",
-        "titulo": "camibusos",
-        "imagen": ["./images/ropaevo/4.82.jpg", "./images/ropaevo/4.83.jpg", "./images/ropaevo/4.84.jpg", "./images/ropaevo/4.84.jpg", "./images/ropaevo/4.85.jpg", "./images/ropaevo/4.86.jpg", "./images/ropaevo/4.87.jpg", "./images/ropaevo/4.88.jpg", "./images/ropaevo/4.89.jpg", "./images/ropaevo/4.891.jpg"],
-        "categoria": {
-            "nombre":  "CASIO 2024 Model",
-            "id": "evo"
-        },
-        "precio": 55000,
-        "info" : "💥camibusos importados tela fría tallas surtidas 😎🔥", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "camibusos-03",
-        "titulo": "camibusos",
-        "imagen": ["./images/ropaevo/4.892.jpg", "./images/ropaevo/4.893.jpg","./images/ropaevo/4.894.jpg", "./images/ropaevo/4.895.jpg", "./images/ropaevo/4.896.jpg", "./images/ropaevo/4.897.jpg","./images/ropaevo/4.898.jpg", "./images/ropaevo/4.899.jpg", "./images/ropaevo/4.9.jpg", "./images/ropaevo/4.9.1.jpg", "./images/ropaevo/4.9.2.jpg", "./images/ropaevo/4.9.3.jpg"],
-        "categoria": {
-            "nombre":  "camibusos",
-            "id": "evo"
-        },
-        "precio": 45000,
-        "info" :"💥camibusos importados tela fría tallas surtidas 😎🔥",  
-        "numerodecantidades": 10
-    },
-    {
-        "id": "camisetas-01",
-        "titulo": "Camiseta oversay ",
-        "imagen": ["./images/ropaevo/4.9.4.jpg", "./images/ropaevo/4.9.5.jpg","./images/ropaevo/4.9.6.jpg", "./images/ropaevo/4.9.7.jpg", "./images/ropaevo/4.9.8.jpg", "./images/ropaevo/4.9.9.jpg","./images/ropaevo/5.jpg", "./images/ropaevo/5.1.jpg", "./images/ropaevo/5.2.jpg", "./images/ropaevo/5.3.jpg", "./images/ropaevo/5.4.jpg", "./images/ropaevo/5.5.jpg", "./images/ropaevo/5.6.jpg"],
-        "categoria": {
-            "nombre":  "Camiseta oversay ",
-            "id": "evo"
-        },
-        "precio": 55000,
-        "info" : "Camiseta oversay 😎para caballero importadas ", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "conjunto-01",
-        "titulo": "Conjunto",
-        "imagen": ["./images/ropaevo/6.jpg", "./images/ropaevo/6.1.jpg","./images/ropaevo/6.2.jpg", "./images/ropaevo/6.3.jpg", "./images/ropaevo/6.4.jpg", "./images/ropaevo/6.5.jpg"],
-        "categoria": {
-            "nombre":  "Conjunto",
-            "id": "evo"
-        },
-        "precio": 125000,
-        "info" : "CONJUNTO ALGODÓN 🍓🍓🍓🍓🍓🍓🍓, pocas unidades", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "conjunto-02",
-        "titulo": "Conjunto",
-        "imagen": ["./images/ropaevo/7.jpg", "./images/ropaevo/7.1.jpg","./images/ropaevo/7.2.jpg", "./images/ropaevo/7.3.jpg", "./images/ropaevo/7.4.jpg"],
-        "categoria": {
-            "nombre":  "Conjunto",
-            "id": "evo"
-        },
-        "precio": 125000,
-        "info" : "CONJUNTO ALGODÓN 🍓🍓🍓🍓🍓🍓🍓, pocas unidades", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "beisbol-01",
-        "titulo": "🔥CAMISA BEISBOLERA㊙",
-        "imagen": ["./images/ropaevo/8.jpg", "./images/ropaevo/8.1.jpg","./images/ropaevo/8.2.jpg", "./images/ropaevo/8.3.jpg", "./images/ropaevo/8.4.jpg", "./images/ropaevo/8.5.jpg", "./images/ropaevo/8.6.jpg", "./images/ropaevo/8.7.jpg",  "./images/ropaevo/8.8.jpg", "./images/ropaevo/8.9.jpg"],
-        "categoria": {
-            "nombre":  "CAMISA BEISBOLERA",
-            "id": "evo"
-        },
-        "precio": 85000,
-        "info" : "🔥CAMISA BEISBOLERA㊙", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "beisbol-02",
-        "titulo": "🔥CAMISA BEISBOLERA㊙",
-        "imagen":["./images/ropaevo/8.9.1.jpg", "./images/ropaevo/8.9.1.jpg","./images/ropaevo/8.9.2.jpg", "./images/ropaevo/8.9.2.jpg", "./images/ropaevo/8.9.3.jpg", "./images/ropaevo/8.9.4.jpg", "./images/ropaevo/8.9.5.jpg", "./images/ropaevo/8.9.6.jpg", "./images/ropaevo/8.9.7.jpg"],
-        "categoria": {
-            "nombre":  "CAMISA BEISBOLERA",
-            "id": "evo"
-        },
-        "precio": 85000,
-        "info" : "🔥CAMISA BEISBOLERA㊙", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-16",
-        "titulo": "📍Nike Dunk☝ 📍",
-        "imagen":["./images/zapatillas/15.jpg", "./images/zapatillas/15.1.jpg","./images/zapatillas/15.2.jpg", "./images/zapatillas/15.3.jpg", "./images/zapatillas/15.4.jpg", "./images/zapatillas/15.5.jpg","./images/zapatillas/15.6.jpg", "./images/zapatillas/15.7.jpg", "./images/zapatillas/15.8.jpg"],
-        "categoria": {
-            "nombre":  "Nike Dunk",
-            "id": "zapatillas"
-        },
-        "precio": 68000,
-        "info" : "📍Nike Dunk☝ 📍, Dama y Caballero", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-18",
-        "titulo": "📍Nike ☝ 📍",
-        "imagen":["./images/zapatillas/16.jpg", "./images/zapatillas/16.1.jpg","./images/zapatillas/16.2.jpg", "./images/zapatillas/16.3.jpg", "./images/zapatillas/16.4.jpg"],
-        "categoria": {
-            "nombre":  "Nike ",
-            "id": "zapatillas"
-        },
-        "precio": 65000,
-        "info" : "📍Nike ☝ 📍, Dama y Caballero, Tallas 35 a la 43👣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-19",
-        "titulo": "REPOSICIÓN ADIDAS SIKAGE ",
-        "imagen":["./images/zapatillas/17.jpg", "./images/zapatillas/17.1.jpg","./images/zapatillas/17.2.jpg", "./images/zapatillas/17.3.jpg", "./images/zapatillas/17.4.jpg","./images/zapatillas/17.5.jpg","./images/zapatillas/17.6.jpg", "./images/zapatillas/17.7.jpg" ],
-        "categoria": {
-            "nombre":  "Nike ",
-            "id": "zapatillas"
-        },
-        "precio": 75000,
-        "info" : "👽💥 REPOSICIÓN ADIDAS SIKAGE, 📍 Tallas del 27 al 33 70.000👶🏻, 🔥 Tallas del 34 al 43 75.000💵, ⚡Hermosos detalles Importados💯", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-20",
-        "titulo": "📍 Adiddas 📍",
-        "imagen":["./images/zapatillas/18.jpg", "./images/zapatillas/18.1.jpg","./images/zapatillas/18.2.jpg", "./images/zapatillas/18.3.jpg", "./images/zapatillas/18.4.jpg"],
-        "categoria": {
-            "nombre":  "Adiddas",
-            "id": "zapatillas"
-        },
-        "precio": 70000,
-        "info" : "caballero", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatillas-21",
-        "titulo": "📍 Adiddas 📍",
-        "imagen":["./images/zapatillas/19.jpg", "./images/zapatillas/19.1.jpg","./images/zapatillas/19.2.jpg", "./images/zapatillas/19.3.jpg"],
-        "categoria": {
-            "nombre":  "Adiddas2",
-            "id": "zapatillas"
-        },
-        "precio": 68000,
-        "info" : "caballero", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatos-01",
-        "titulo": "📍 Mocasin 📍",
-        "imagen":["./images/zapatos/1.jpg", "./images/zapatos/1.1.jpg","./images/zapatos/1.2.jpg", "./images/zapatos/1.3.jpg", "./images/zapatos/1.4.jpg"],
-        "categoria": {
-            "nombre":  " Mocasin ",
-            "id": "zapatos"
-        },
-        "precio": 78000,
-        "info" : "📍 Mocasin 📍100% Cuero, Caballero 🤵🏻‍♂, Tallas 37 a la 43 👣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatos-02",
-        "titulo": "🔥REPOSICION🔥 LACOSTE🐊",
-        "imagen":["./images/zapatos/2.jpg", "./images/zapatos/2.1.jpg","./images/zapatos/2.2.jpg"],
-        "categoria": {
-            "nombre":  "REPOSICION LACOSTE",
-            "id": "zapatos"
-        },
-        "precio": 78000,
-        "info" : "▪Talla 37 al 42👣, ▪ Precio: 65.000 pesos💸,  ▪ Pegado Vulcanizado⚡", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "zapatos-03",
-        "titulo": "🔥REPOSICION🔥 LACOSTE🐊",
-        "imagen":["./images/zapatos/3.jpg", "./images/zapatos/3.1.jpg","./images/zapatos/3.3.jpg", "./images/zapatos/3.4.jpg" ,  "./images/zapatos/3.5.jpg" ],
-        "categoria": {
-            "nombre":  "REPOSICION LACOSTE",
-            "id": "zapatos"
-        },
-        "precio": 78000,
-        "info" : "✅Llego Nuevo Calzado Velez👞  Nueva colección, Para caballero💪 , Fotos reales💯 , Especificaciones: Cosido 🧵 Sintético ", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "bolso-01",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/1.jpg","./images/bolsos/1.1.jpg", "./images/bolsos/1.2.jpg", "./images/bolsos/1.3.jpg", "./images/bolsos/1.4.jpg", "./images/bolsos/1.5.jpg", "./images/bolsos/1.6.jpg", "./images/bolsos/1.7.jpg", "./images/bolsos/1.8.jpg","./images/bolsos/1.9.jpg", "./images/bolsos/1.9.1.jpg"],
-        "categoria": {
-            "nombre":  "bolso-01",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "bolso-02",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/2.jpg","./images/bolsos/2.1.jpg", "./images/bolsos/2.2.jpg", "./images/bolsos/2.3.jpg"],
-        "categoria": {
-            "nombre":  "bolso-02",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "bolso-03",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/4.jpg","./images/bolsos/4.1.jpg", "./images/bolsos/4.2.jpg", "./images/bolsos/4.3.jpg", "./images/bolsos/4.4.jpg"],
-        "categoria": {
-            "nombre":  "bolso-03",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "bolso-04",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/5.jpg","./images/bolsos/5.1.jpg", "./images/bolsos/5.2.jpg", "./images/bolsos/5.3.jpg"],
-        "categoria": {
-            "nombre":  "bolso-03",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
-    },
-
-    {
-        "id": "bolso-04",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/6.jpg","./images/bolsos/6.1.jpg", "./images/bolsos/6.2.jpg", "./images/bolsos/6.3.jpg"],
-        "categoria": {
-            "nombre":  "bolso-04",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
-    },
-    {
-        "id": "bolso-05",
-        "titulo": "Bolso 🥰 B i m b a  y  L o l a !!! ",
-        "imagen":["./images/bolsos/7.jpg","./images/bolsos/7.1.jpg", "./images/bolsos/7.2.jpg"],
-        "categoria": {
-            "nombre":  "bolso-05",
-            "id": "bolsos"
-        },
-        "precio": 130000,
-        "info" : "Bolso 🥰  B i m b a  y  L o l a !!!   Manos Libres $130.000, Coach $120.000,   E S P E C T A C U L A R E S ❣", 
-        "numerodecantidades": 10
+        "precio": 20000,
+        "info": "Sandalias planas para niñas: Tallas 27 a la 33, Precio 20.000 pesos",
+        "numerodecantidades": 10,
+        "colores": ["Azul", "Rojo", "Verde"],
+        "tallas": [
+            {"value": "27", "text": "Talla 27"},
+            {"value": "28", "text": "Talla 28"},
+            {"value": "29", "text": "Talla 29"},
+            {"value": "30", "text": "Talla 30"},
+            {"value": "31", "text": "Talla 31"},
+            {"value": "32", "text": "Talla 32"},
+            {"value": "33", "text": "Talla 33"}
+        ]
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-
-
-    
-    
-
-
-    
-
-
-
-    
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+]
 
 
 
@@ -668,4 +153,3 @@
 
     
    
-]
