@@ -363,7 +363,7 @@ function drawkp(e) {
                     cantidad: mas
                 });
         
-                const res = await fetch("http://localhost:3000/tallasydemas", options);
+                const res = await fetch("https://accused-linda-jhoa4564.koyeb.app/tallasydemas", options);
                 if (res.status === 200) {
                     console.log(res);
                 } else {
