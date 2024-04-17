@@ -35,7 +35,6 @@ botonesCategorias.forEach(boton => {
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
         if (e.currentTarget.id != "todos") {
-            console.log(e.currentTarget.id)
             const productosBoton = productos.filter((producto, i) => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
             let productosfiltrados = [...productosBoton]
@@ -156,7 +155,6 @@ if (productosEnCarritoLS) {
 
 
 function drawkp(e) {
-    console.log(111111111)
     let mas = 1;
     let aumento = 0;
     let get = localStorage.getItem("arreglo");
@@ -175,12 +173,11 @@ function drawkp(e) {
         if (contador % 3 === 0 && i !== 0) {
           resultado = "." + resultado;
         }
-        console.log(resultado)
+
     }
 
 
 
-    console.log("Índice del producto en el array productosEnCarrito:", index);
     main.innerHTML = `
     <div class="caja-individual">
         <div id="image">
@@ -225,11 +222,23 @@ function drawkp(e) {
 
     // Itera sobre el array de opciones y crea un elemento <option> por cada una
     talla2222222.forEach(opcion => {
-        const optionElement = document.createElement('option'); // Crea un elemento <option>
-        optionElement.value = opcion.value; // Establece el valor de la opción
-        optionElement.textContent = opcion.text; // Establece el texto visible de la opción
-        select.appendChild(optionElement); // Agrega la opción al select
+        const optionElement = document.createElement('option'); 
+
+        if(talla2222222.length === 0){
+            optionElement.textContent = "No Hay Tallas";
+            optionElement.value = "No Hay tallas"
+
+        }else{
+            optionElement.value = opcion.value; // Establece el valor de la opción
+            optionElement.textContent = opcion.text; // Establece el texto visible de la opción
+            select.appendChild(optionElement); 
+        }
+
+
+
     });
+    let id = 0; // Declarar la variable id fuera del event listener
+
 
 
 
@@ -301,7 +310,7 @@ function drawkp(e) {
             if (contador1 % 3 === 0 && i !== 0) {
               resultado1 = "." + resultado1;
             }
-            console.log(resultado)
+
         }
     
         
@@ -328,13 +337,45 @@ function drawkp(e) {
         const botonPago = document.createElement("button");
         botonPago.classList.add("pagosepay")
         botonPago.textContent = "Pagar con ePayco";
-        botonPago.addEventListener("click", function() {
+        botonPago.addEventListener("click", async function() {
             const precioUnitario = parseFloat(pro.precio);
             const cantidad = parseFloat(document.querySelector(".ca").textContent);
             const precioTotal = precioUnitario * cantidad;
             pro.precio = precioTotal
             const proJSON = JSON.stringify(pro);   
             localStorage.setItem("pagos", proJSON);
+
+            //tallas 
+            const options = {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json; charset=utf-8"
+                }
+            };
+        
+            try {
+                options.body = JSON.stringify({
+                    id: pro.id === pro.id ? id++ :id,
+                    id2: pro.id,
+                    titulo : pro.titulo,
+                    categoria: pro.categoria.nombre,
+                    tallas: select.value,
+                    cantidad: mas
+                });
+        
+                const res = await fetch("http://localhost:3000/tallasydemas", options);
+                if (res.status === 200) {
+                    console.log(res);
+                } else {
+                    console.log("Algo falló en el post");
+                }
+            
+            } catch(err) {
+                console.log(err);
+            }
+
+
+
             window.location.href = "../pagos.html"
         
             

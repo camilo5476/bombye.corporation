@@ -37,14 +37,6 @@ root.innerHTML =    `
                         <input type="text" id="pais" name="pais" required>
                     </div>
                     <div class="campo">
-                        <label for="pais">tallas: ${datos.tallaInicial}- ${datos.tallaFinal}</label>
-                        <input type="text" id="tallaform" name="tallaform" required>
-                    </div>
-                    <div class="campo">
-                    <label for="pais"  class="id">Productos: ID - ${datos.id} </label>
-                        <div class="des-imagenes"></div>
-                        <input type="text" id="colorForm" name="color" placeholder="Coloca el numero que le corresponda al producto que quieres junto con el ID" required>
-                    </div>
                     <div class="campo">
                         <p class="men"></p>
                         <input id="env" type="submit" value="Enviar">
@@ -144,23 +136,11 @@ const caja = document.querySelector(".des-imagenes")
     
 
 
-let jsonimagenes = datos.imagen 
-jsonimagenes.forEach((im ,i)=> {
-    const div1 = document.createElement("div")
-    div1.classList.add("caja-imagenes")
-    div1.innerHTML =  ` 
-        <img src="${im}">
-        <p>${i}</p>
-    
-    `
-    caja.appendChild(div1)
-        
-})
 
 
 var handler = ePayco.checkout.configure({
     key:  "d9bb50a26f7e056ab82328afbe42c474",
-    test: false // Cambiar a false en producción
+    test: true // Cambiar a false en producción
 });
 
 // Verificar si el token está configurado correctamente
@@ -192,10 +172,11 @@ if (!handler) {
 
 
 
-const epayw = document.querySelectorAll(".epayuu")
+const epayw = document.querySelectorAll("#epayuu")
 epayw.forEach((btn, i) => {
     btn.addEventListener("click", () => {
         handler.open(data)
+        console.log("111111111111111111111")
     })
 })
 

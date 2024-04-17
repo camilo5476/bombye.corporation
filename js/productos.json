@@ -12,114 +12,17 @@
             "nombre": "Audífonos",
             "id": "urban"
         },
-        "precio": 70000,
+        "precio": 85000,
         "info": "Busos de algodon monaco con estampados de one piece",
         "numerodecantidades": 10,
         "colores": ["Rojo", "Azul", "Negro"],
         "tallas": [
-            {"value": "S", "text": "m"},
-            {"value": "M", "text": "l"},
-            {"value": "L", "text": "xl"}
-        ]
-    },
-    {
-        "id": "Audifonos-E50",
-        "titulo": "Audífonos E50",
-        "imagen": [
-            "./images/audifonos/1.jpg",
-            "./images/audifonos/1.1.jpg",
-            "./images/audifonos/1.2.jpg"
-        ],
-        "categoria": {
-            "nombre": "Audífonos",
-            "id": "electronico"
-        },
-        "precio": 55000,
-        "info": "Audífonos E50 $55.000 Bluetooth 5.1 estéreo Sensor digital Estilo: en la oreja ...",
-        "numerodecantidades": 10,
-        "colores": ["Negro", "Blanco"],
-        "tallas": [
-            {"value": "Única", "text": "Talla Única"}
-        ]
-    },
-    {
-        "id": "zandalias-01",
-        "titulo": "Puma",
-        "imagen": [
-            "./images/zandalias/2.jpg",
-            "./images/zandalias/2.1.jpg",
-            "./images/zandalias/2.2.jpg"
-        ],
-        "categoria": {
-            "nombre": "zandalias",
-            "id": "sandalias"
-        },
-        "precio": 80000,
-        "info": "Dama: Tallas 35 a la 40, Precio 88.000 pesos",
-        "numerodecantidades": 10,
-        "colores": ["Negro", "Blanco", "Rojo"],
-        "tallas": [
-            {"value": "35", "text": "Talla 35"},
-            {"value": "36", "text": "Talla 36"},
-            {"value": "37", "text": "Talla 37"},
-            {"value": "38", "text": "Talla 38"},
-            {"value": "39", "text": "Talla 39"},
-            {"value": "40", "text": "Talla 40"}
-        ]
-    },
-    {
-        "id": "zandalias-02",
-        "titulo": "zandalias planas - niña",
-        "imagen": [
-            "./images/zandalias/3.jpg",
-            "./images/zandalias/3.1.jpg",
-            "./images/zandalias/3.2.jpg",
-            "./images/zandalias/4.jpg"
-        ],
-        "categoria": {
-            "nombre": "zandalias",
-            "id": "sandalias"
-        },
-        "precio": 20000,
-        "info": "Sandalias planas para niñas: Tallas 27 a la 33, Precio 20.000 pesos",
-        "numerodecantidades": 10,
-        "colores": ["Rosa", "Amarillo", "Verde"],
-        "tallas": [
-            {"value": "27", "text": "Talla 27"},
-            {"value": "28", "text": "Talla 28"},
-            {"value": "29", "text": "Talla 29"},
-            {"value": "30", "text": "Talla 30"},
-            {"value": "31", "text": "Talla 31"},
-            {"value": "32", "text": "Talla 32"},
-            {"value": "33", "text": "Talla 33"}
-        ]
-    },
-    {
-        "id": "zandalias-03",
-        "titulo": "zandalias planas - niña",
-        "imagen": [
-            "./images/zandalias/5.jpg",
-            "./images/zandalias/5.1.jpg",
-            "./images/zandalias/5.2.jpg"
-        ],
-        "categoria": {
-            "nombre": "zandalias",
-            "id": "sandalias"
-        },
-        "precio": 20000,
-        "info": "Sandalias planas para niñas: Tallas 27 a la 33, Precio 20.000 pesos",
-        "numerodecantidades": 10,
-        "colores": ["Azul", "Rojo", "Verde"],
-        "tallas": [
-            {"value": "27", "text": "Talla 27"},
-            {"value": "28", "text": "Talla 28"},
-            {"value": "29", "text": "Talla 29"},
-            {"value": "30", "text": "Talla 30"},
-            {"value": "31", "text": "Talla 31"},
-            {"value": "32", "text": "Talla 32"},
-            {"value": "33", "text": "Talla 33"}
+            {"value": "M", "text": "m"},
+            {"value": "l", "text": "l"},
+            {"value": "xl", "text": "xl"}
         ]
     }
+ 
 
 ]
 
