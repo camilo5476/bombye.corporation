@@ -156,6 +156,7 @@ if (productosEnCarritoLS) {
 
 
 function drawkp(e) {
+    console.log(111111111)
     let mas = 1;
     let aumento = 0;
     let get = localStorage.getItem("arreglo");
@@ -205,10 +206,7 @@ function drawkp(e) {
                     <button class="menos">-</button>
                 </div>
                 <div>
-                    <label for="lista">Selecciona una opción:</label>
-
-                    <select id="lista" name="lista"></select>
-                        
+                    <select id="lista" name="lista"></select>   
                 </div>
            </div>
            <div class="botones">

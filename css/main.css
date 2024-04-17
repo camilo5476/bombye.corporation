@@ -1,58 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-:root {
-    --clr-main: #0db659;
-    --clr-main-light: #0bd491;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
-    --clr-red: #961818;
-}
+/* Estilos CSS */
 
-
-/* Reset de estilos */
 /* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: var(--clr-white); /* Usando variables CSS para colores */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #14171a;
+    font-family: 'Rubik', sans-serif; /* Cambio de fuente */
+    background-color: #0b0c0e;
     overflow-x: hidden;
+    margin: 0; /* Añadido para resetear margen */
 }
 
-
-
-.header-mobile{
+.header-mobile {
     display: none;
 }
 
-.close-menu{
+.close-menu {
     display: none;
 }
 
-.boton-menu{
+.boton-menu {
     border: none;
     background-color: transparent;
-
 }
 
-aside{
+aside {
     position: fixed;
     top: 0;
     z-index: 99;
     width: 100%;
-    height: 15vh;
-    background-color: rgb(43, 41, 41);
+    height: 12vh;
+    background-color: #15151a; /* Color ajustado */
 }
 
-nav{
+nav {
     width: 100%;
     height: 100%;
-    background-color: #252527;
+    background-color: #15151a;
 }
 
 ul {
@@ -63,23 +53,21 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 2%;
-
 }
 
-li{
+li {
     list-style-type: none;
     padding: 2%;
     border-radius: 10px;
     font-size: 20px;
-    color: #e2e2e2;
-
+    color: rgb(81, 0, 156) 
 }
 
-li:hover{
+li:hover {
     background-color: #252527;
 }
 
-li button{
+li button {
     font-size: 15px;
     text-transform: capitalize;
 }
@@ -96,11 +84,13 @@ li button{
     justify-content: center;
 }
 
-#menu34{
+
+#menu34 {
     cursor: pointer;
+    color: rgb(81, 0, 156) 
 }
 
-.rop{
+.rop {
     display: none;
 }
 
@@ -112,63 +102,73 @@ li button{
     height: 50%;
     bottom: 2%;
     border-radius: 10px;
-
 }
 
-.carritocaja{
+.carritocaja {
     font-size: 15px;
 }
 
-
-#bor{
+#bor {
     position: relative;
     top: 100px;
+    display: flex;
+    justify-content: center;
+
 }
+
+.rrr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .contenedor-productos {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content:center;
+    grid-template-columns: repeat(3, 1fr); /* Ajuste automático de columnas */
+    row-gap: 10%;
     column-gap: 5%;
-    row-gap: 100px;
-    padding: 8%;
-    padding-right: 12%;
+    margin-top: 100px;
+
+
 }
 
-
 #qw{
-    position: relative;
-    left: 20%;
-    height: 400px;
-    width: 300px;
-
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .producto-imagen {
     width: 100%;
-    height: 81%; /* Altura de la imagen según necesites */
+    height: 81%;
     border-radius: 10px;
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    object-fit: cover;
 }
-
-
 
 .producto-detalles {
     position: relative;
     bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7); /* Cambia la opacidad según necesites */
+    background-color: rgba(0, 0, 0, 0.7);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #fff;
     text-align: center;
 }
 
-.producto-detalles h3, .producto-detalles p {
-    margin: 0;
+.producto-detalles h3,
+.producto-detalles p {
+    margin: 3%;
 }
 
 .producto-detalles button {
@@ -180,35 +180,34 @@ li button{
     cursor: pointer;
 }
 
-.botones{
+.botones {
     color: #14171a;
     text-transform: uppercase;
 }
 
-
-
 @media screen and (max-width: 1500px) {
-    .wrapper{
+    /* Estilos para pantallas medianas */
+
+    .wrapper {
         position: relative;
-        background-color: #252527;
-        height: 15vh;
+        background-color: #15151a;
+        height: 13vh;
         width: 100%;
         overflow-x: visible;
         z-index: 99;
-    
     }
 
     aside {
         top: 0;
         position: fixed;
         z-index: 99;
-        background-color: var(--clr-main);
+        background-color: #0a0a0c;
         left: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
         transform: translateX(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: .2s;
+        transition: 0.2s;
         z-index: 99;
         overflow-y: scroll;
     }
@@ -219,26 +218,25 @@ li button{
         visibility: visible;
         width: 40%;
         height: 100%;
-        background-color: #252527;
+        background-color: #0a0a0c;
     }
 
-    .header-mobile{
+    .header-mobile {
         position: absolute;
         top: 20px;
         left: 5%;
         display: block;
-
     }
 
-    .open-menu{
-        width:  70px;
+    .open-menu {
+        width: 70px;
         height: 65px;
         border-radius: 10px;
         border: none;
         background-color: #554545;
     }
 
-    ul{
+    ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -246,32 +244,28 @@ li button{
         gap: 15px;
     }
 
-    .ds{
+    .ds {
         display: flex;
         flex-direction: column;
         gap: 15px;
-
     }
 
-    li{
+    li {
         padding: 0.5rem;
         border-radius: 8px;
     }
 
-    li button{
+    li button {
         font-size: 10px;
     }
 
-
-
-    li:hover{
+    li:hover {
         background-color: #961818;
         padding: 0.5rem;
         border-radius: 8px;
-        
     }
 
-    .close-menu{
+    .close-menu {
         position: absolute;
         display: block;
         top: 20px;
@@ -286,56 +280,54 @@ li button{
         height: 5%;
         top: 4%;
         border-radius: 10px;
-    
     }
+
     .contenedor-productos {
         position: relative;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        row-gap: 50px;
-        top: 200px;
-
+        column-gap: 60px;
+        row-gap: 100px;
+        margin-top: 200px;
     }
 
-    #qw{
+    #qw {
         height: 300px;
         width: 300px;
         left: 10%;
-
     }
-    
 }
 
 @media screen and (max-width: 1000px) {
+    /* Estilos para pantallas pequeñas */
 
     .contenedor-productos {
         position: relative;
         grid-template-columns: repeat(2, 1fr);
-        top: 200px;
+        margin-top: 200px;
     }
-    #qw{
+
+    #qw {
         height: 250px;
         width: 250px;
         z-index: -1;
     }
-    
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
+    /* Estilos para dispositivos móviles */
+
     .contenedor-productos {
         z-index: 1;
         grid-template-columns: repeat(1, 300px);
         justify-content: center;
+        margin-top: 200px;
     }
-    #qw{
+
+    #qw {
         z-index: 1;
         position: relative;
         height: 300px;
         width: 80%;
         right: 20%;
     }
-    
 }
-
-
-
