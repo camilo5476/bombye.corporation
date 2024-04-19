@@ -201,9 +201,15 @@ function drawkp(e) {
                     <button class="mas">+</button>
                     <p class="ca">${mas}</p>
                     <button class="menos">-</button>
+                    <div id="colores_gl">
+
+                    </div>
                 </div>
                 <div>
                     <select id="lista" name="lista"></select>   
+                </div>
+                <div class="colores-tipos">
+
                 </div>
            </div>
            <div class="botones">
@@ -213,8 +219,46 @@ function drawkp(e) {
     </div>
  
   `;
+    let imagentttttt = ""; 
+    let colors = "";
+    let colores = pro.tipos_colores;
+    let contenedor = document.getElementById("colores_gl");
+  
+    colores.forEach((color, i) => {
+        let div = document.createElement("div"); // Crea un nuevo elemento div
+        div.classList.add("color-lo"); 
+        div.dataset.co = color ;
+        div.style.backgroundColor = color; 
+        contenedor.appendChild(div);
+    });
+ 
+    document.querySelectorAll(".color-lo").forEach((es,t) => {
+        es.addEventListener("click", e => {
+            colors = e.target.dataset.co
+        })
+    })
+
+
+    const coloresTiposd = document.querySelector(".colores-tipos");
+    let imagenestipos2 = pro.imagenes2;
     
-        
+    imagenestipos2.forEach(ele => {
+        let ds = `
+            <div class="imagen_tip" id="imagen_tip">
+                <img class="imagen_tip45" data-info="${pro.id}" data-estilo="${ele.diseno}" src="${ele.imagen}">
+            </div>
+        `;
+    
+        coloresTiposd.innerHTML += ds; // Agregar el contenido HTML al contenedor
+    });
+    
+    document.querySelectorAll(".imagen_tip45").forEach(ele => {
+        ele.addEventListener("click" , e => {
+            imagentttttt = e.target.dataset.estilo
+        })
+    })
+    
+    
     const select = document.getElementById('lista');
 
     let talla2222222 = pro.tallas
@@ -360,10 +404,12 @@ function drawkp(e) {
                     titulo : pro.titulo,
                     categoria: pro.categoria.nombre,
                     tallas: select.value,
-                    cantidad: mas
+                    cantidad: mas,
+                    colores, colors,
+                    disenos: imagentttttt
                 });
         
-                const res = await fetch("https://accused-linda-jhoa4564.koyeb.app/tallasydemas", options);
+                const res = await fetch("https://json12-e5qz0q9kf-camilo5476s-projects.vercel.app/tallasydemas", options);
                 if (res.status === 200) {
                     console.log(res);
                 } else {

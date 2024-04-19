@@ -5,8 +5,8 @@
         "imagen": [
             "./images/urban/1.jpg",
             "./images/urban/1.1.jpg",
-            "./images/urban/1.2.jpg",
-            "./images/urban/1.2.jpg"
+            "./images/urban/1.3.jpg",
+            "./images/urban/1.5.jpg"
         ],
         "categoria": {
             "nombre": "Audífonos",
@@ -20,6 +20,13 @@
             {"value": "M", "text": "m"},
             {"value": "l", "text": "l"},
             {"value": "xl", "text": "xl"}
+        ],
+        "tipos_colores": ["blue", "green", "red", "black"],
+        "imagenes2" : [
+            {"imagen": "./images/urban/1.jpg", "diseno": "luffy" },
+            {"imagen":  "./images/urban/1.1.jpg", "diseno": "naruto" },
+            {"imagen":  "./images/urban/1.3.jpg", "diseno": "one" }
+
         ]
     }
  
