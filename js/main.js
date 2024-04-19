@@ -409,7 +409,7 @@ function drawkp(e) {
                     disenos: imagentttttt
                 });
         
-                const res = await fetch("https://json12-e5qz0q9kf-camilo5476s-projects.vercel.app/tallasydemas", options);
+                const res = await fetch("https://disgusted-junie-fd.koyeb.app//tallasydemas", options);
                 if (res.status === 200) {
                     console.log(res);
                 } else {
