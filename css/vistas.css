@@ -597,8 +597,4 @@ input[type="email"]:focus {
 
 }
 
-#colores_gl div:hover{
-    border: 1px solid blueviolet;
-    box-shadow: 2px 2px 2px 1px rgb(33, 10, 139);
-}
 

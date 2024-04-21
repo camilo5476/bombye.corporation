@@ -232,11 +232,20 @@ function drawkp(e) {
         contenedor.appendChild(div);
     });
  
-    document.querySelectorAll(".color-lo").forEach((es,t) => {
+    document.querySelectorAll(".color-lo").forEach((es) => {
         es.addEventListener("click", e => {
-            colors = e.target.dataset.co
-        })
-    })
+            if (es.style.border === "1px solid blueviolet" && es.style.boxShadow === "2px 2px 2px 1px rgb(33, 10, 139)") {
+                es.style.border = "";
+                es.style.boxShadow = "";
+            } else {
+                es.style.border = "1px solid blueviolet";
+                es.style.boxShadow = "2px 2px 2px 1px rgb(33, 10, 139)";
+            }
+            colors = e.target.dataset.co;
+        });
+    });
+    
+    
 
 
     const coloresTiposd = document.querySelector(".colores-tipos");
