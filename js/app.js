@@ -2,6 +2,8 @@
 const datos1 = localStorage.getItem("pagos")
 const datos = JSON.parse(datos1)
 
+console.log(datos)
+
 const root = document.querySelector(".root_double")
 
 root.innerHTML =    `
@@ -170,13 +172,4 @@ if (!handler) {
     // ...
 }
 
-
-
-const epayw = document.querySelectorAll("#epayuu")
-epayw.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-        handler.open(data)
-        console.log("111111111111111111111")
-    })
-})
-
+const imagenPagos = document.querySelector(".imgpagos")

@@ -169,12 +169,30 @@
     left: 15%;
 }
 
-.cantidades button{
-    width: 5rem;
+.cantidades .mas{
+    position: absolute;
+    width: 2rem;
     height: 2rem;
     border-radius: 100%;
     background-color: #000000;
     border: none;
+    left: 35%;
+    top: 35%;
+}
+.cantidades .ca{
+    position: absolute;
+    left: 23%;
+}
+
+.cantidades .menos{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #000000;
+    border: none;
+    top: 35%;
+    left: 4%;
 }
 .cantidades button:hover{
     background-color: grey;
@@ -553,48 +571,47 @@ input[type="email"]:focus {
 
 
 
-
-.colores-tipos{
+.colores-tipos {
+    position: relative;
     width: 30%;
     height: 20%;
-    position: relative;
-    right: 38%;
-    top: 15%;
-    display: grid ;
-    grid-template-columns: repeat(4, 1fr);
+    right: 36%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
-.imagen_tip{
+.imagen_tip {
     display: flex;
     height: 100%;
     width: 4rem;
 }
 
-.imagen_tip:hover{
+.imagen_tip:hover {
     border: 1px solid blueviolet;
     box-shadow: 2px 2px 2px 1px rgb(33, 10, 139);
 }
+
 .imagen_tip img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#colores_gl{
+#colores_gl {
     display: flex;
     flex-direction: row;
-    width: 500px;
+    justify-content: center;
+    width: 150px;
     position: relative;
-    top: 5%;
+    top: 38%;
+    right: 30%;
 }
+
 #colores_gl div {
     display: grid;
+    grid-template-columns: repeat(4 , 1fr);
     width: 2rem;
-    height: 2rem;
-    grid-template-columns: repeat(4, 1fr);
+    height: 2rem;;
     border-radius: 100%;
-
 }
-
-

@@ -197,20 +197,23 @@ function drawkp(e) {
                 </div>
                 
                 <div class="cantidades">
-                    <p>CANTIDAD:</p>
+                 
                     <button class="mas">+</button>
                     <p class="ca">${mas}</p>
                     <button class="menos">-</button>
-                    <div id="colores_gl">
-
-                    </div>
+                   
                 </div>
                 <div>
                     <select id="lista" name="lista"></select>   
                 </div>
+    
                 <div class="colores-tipos">
+                </div>
+        
+                <div id="colores_gl">
 
                 </div>
+              
            </div>
            <div class="botones">
             
@@ -263,6 +266,7 @@ function drawkp(e) {
     
     document.querySelectorAll(".imagen_tip45").forEach(ele => {
         ele.addEventListener("click" , e => {
+            pro.imagen21.ft = e.target.src
             imagentttttt = e.target.dataset.estilo
         })
     })
@@ -415,10 +419,11 @@ function drawkp(e) {
                     tallas: select.value,
                     cantidad: mas,
                     colores, colors,
-                    disenos: imagentttttt
+                    disenos: imagentttttt,
+                    elegido: pro.imagen21.ft
                 });
         
-                const res = await fetch("https://disgusted-junie-fd.koyeb.app//tallasydemas", options);
+                const res = await fetch("http://localhost:3000/tallasydemas", options);
                 if (res.status === 200) {
                     console.log(res);
                 } else {
