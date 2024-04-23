@@ -245,7 +245,6 @@ function drawkp(e) {
     document.querySelectorAll(".imagen_tip45").forEach(ele => {
         ele.addEventListener("click" , e => {
             img = e.target.src
-            datosC[0].imagenelegida = e.target.src
             imagentttttt = e.target.dataset.estilo
         })
     })
@@ -479,8 +478,10 @@ function drawkp(e) {
                 };
                 
                 try {
-                    const res = await fetch("http://localhost:200/tallasydemas", options);
+                    const res = await fetch("https://serverpp-rwc9.onrender.com/tallasydemas", options);
+
                     if (res.status === 200) {
+                        console.log("Se hizo el post correctamente")
                         window.location.href = "../pagos.html"
     
 
