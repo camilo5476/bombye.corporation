@@ -6,51 +6,115 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    height: 200vh;
 }
 
 .padre {
+
     display: flex;
-    justify-content: space-around; /* Distribuye las cajas hijos de manera equitativa */
-    align-items: flex-start; /* Alinea los hijos en la parte superior */
+    justify-content: center; /* Distribuye las cajas hijos de manera equitativa */
+    align-items: center; /* Alinea los hijos en la parte superior */
     height: 100vh; /* Toma el 100% del alto del viewport */
+    flex-direction: row;
 }
 
 /* Estilos para el contenedor de la información del producto */
 .root_double {
-    flex: 1; /* Ocupa todo el espacio disponible */
-    max-width: 1200px;
+    width: 45%;
     padding: 20px;
     box-sizing: border-box; /* Incluye el padding en el ancho */
 }
 
-/* Estilos para el contenedor del resumen de la transacción */
+
 .normal {
-    flex: 1; /* Ocupa todo el espacio disponible */
-    max-width: 50%;
-    padding: 20px;
-    box-sizing: border-box; /* Incluye el padding en el ancho */
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 40%;
+    height: 85%;
+    border-radius: 10px;
+    
 }
 
-.normal img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border: 2px solid #1e0072;
-    border-radius: 4px;
+.info{
+    position: relative;
+    background-color: rgb(26, 25, 25);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
+.info h2 {
+    font-size: 1.3rem;
+}
+.info p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.info .talla-info{
+    text-transform: uppercase;
+    display: flex;
+}
+
+.info .cajaimg{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 20%;
+    
+
+}
+
+.info .cajaimg div {
+    position: relative;
+    height: 10%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info .cajaimg div h3,p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.info .cajaimg div img{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 5rem;
+}
+
+.pagosss {
+    height: 100%;
+}
+
+.pagosss img {
+    width: 100%;
+    height: 60%;
+
+}
+
+
+
 
 #epayuu {
+    position: relative;
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     background-color: #007bff;
     color: #ffffff;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    bottom: -5%;
 }
 
-.epayuu:hover {
+#epayuu:hover {
     background-color: #0056b3;
 }
 
@@ -106,29 +170,75 @@ body {
 }
 
 /* Estilos para las imágenes de productos */
-.des-imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    /* Styles for screens less than 768px wide */
+  
+    .padre {
+        display: flex;
+        justify-content: center; /* Distribuye las cajas hijos de manera equitativa */
+        align-items: center; /* Alinea los hijos en la parte superior */
+        height: 100vh; /* Toma el 100% del alto del viewport */
+        flex-direction: column;
+        margin-top: 40%;
+        gap: 20%;
+    }
+
+    .normal {
+        position: relative;
+        width: 78%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .normal div {
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+    }
+    .root_double {
+        width: 80%;
+
+  
+    
+    }
 }
 
-.caja-imagenes {
-    width: 150px;
-    margin: 10px;
-    text-align: center;
+
+@media only screen and (max-width: 800px) {
+    /* Styles for screens less than 768px wide */
+    .padre {
+        display: flex;
+        justify-content: center; /* Distribuye las cajas hijos de manera equitativa */
+        align-items: center; /* Alinea los hijos en la parte superior */
+        height: 100vh; /* Toma el 100% del alto del viewport */
+        flex-direction: column;
+        margin-top: 80%;
+    }
+
+    .normal {
+        position: relative;
+        width: 78%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .normal div {
+        gap: 5%;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+    .root_double {
+        width: 89%;
+
+    }
+  
+    
 }
 
-.caja-imagenes img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #1e0072;
-    border-radius: 4px;
-}
-
-/* Estilos para mensajes de error */
-.men {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-}

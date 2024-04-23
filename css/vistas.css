@@ -1,617 +1,337 @@
-
-
 .caja-individual{
-    position: relative;
-    top: 80px;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 30px;
-
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
 }
 
-
-
-#image{
+#image {
     position: relative;
-    width: 30%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 35%;
+    height: 60%;
+
 
 }
 
+/*hijos de #image*/
 #image img{
-    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    
+    border: 1px solid rebeccapurple; 
+    box-shadow: 1px 1px 3px 3px rgb(46, 2, 148);
 }
 
-.adelante{
+#image .adelante {
     position: absolute;
     right: 0;
-    top: 50%;
-    background-color: #000000;
-    border-radius: 15px;
-    border: none;
-    color: white;
-    width: 5%;
-    height: 5%;
+    bottom: 50%;
+    border-radius: 100%;
+    border: 2px solid blueviolet;
+    color: aliceblue;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    
 
 }
-
-.atras{
+#image .atras {
     position: absolute;
-    top: 50%;
-    background-color: #000000;
-    border-radius: 15px;
-    border: none;
-    color: white;
-    height: 5%;
-    width: 5%;
+    left: 0;
+    bottom: 50%;
+    border-radius: 100%;
+    border: 2px solid blueviolet;
+    color: aliceblue;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    
 
 }
 
+
+/*hijos de #image*/
 
 .producto-detalles2{
-    position: relative;
-    width: 45%;
-    height: 90%;
+    width: 30%;
+    height: 60%;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+
     flex-direction: column;
+    
+}
+/*hijos de productosdetalles*/
+
+.info {
+    position: relative;
+    color: aliceblue;
+    height: 55%;
     border-radius: 10px;
-    background-color: #161515;
-    border: 1px solid blue;
-    box-shadow: 3px 3px 3px 2px rgb(33, 10, 139);
+    background-color: black;
+    border: 1px solid rebeccapurple; 
+    box-shadow: 1px 1px 3px 3px rgb(46, 2, 148);
+}
+/*hijos de info*/
+.info .title{
+    margin-top: 5%;
+    text-transform: uppercase;
+    text-align: center;
 
 }
 
-.info{
-    height: 70%;
+.info .precios12{
     display: flex;
     flex-direction: row;
-    align-items: end;
-
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    
 }
 
-.descripciones{
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    height: 50%;
+.info p {
+    margin-top: 1%;
     text-align: center;
-    color: aliceblue;
 }
 
-.title{
-    position: relative;
-    bottom: 10px;
-    color: azure;
-    text-transform: uppercase;
-}
-
-.uno-uno{
-    position: relative;
-    bottom: 10px;
-    margin-top: 20px;
-    font-size: 2vh;
-
-
-}
-
-.cop{
-    font-size: 2vh;
-}
-
-.uno{
-    position: relative;
-    bottom: 7px;
-    font-size: 4vh;
-
-
-}
-
-.dos{
-    margin: 20px;
-    font-size: 1.5vh;
-}
-
-
-.botones{
+.info .botones {
+    position: absolute;
+    width: 100%;
     height: 30%;
+    bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.botones button{
-    width: 70%;
-    height: 40px;
-
-}
-
-
-.tallas-calzado button{
-    border-radius: 100px;
-    width: 50px;
-}
-
-.cantidades{
-    width: 40%;
-    height: 12%;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-    flex-direction: row;
-    gap: 20px;
-    right: 20px;
-    color: aliceblue;
-}
-.precio23{
-    position: absolute;
-    width: 100px;
-    bottom: 170px;
-    left: 10px;
-    font-size: 20px;
-}
-
-.cantidades{
-    position: relative;
-    top: 37%;
-    left: 15%;
-}
-
-.cantidades .mas{
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    background-color: #000000;
-    border: none;
-    left: 35%;
-    top: 35%;
-}
-.cantidades .ca{
-    position: absolute;
-    left: 23%;
-}
-
-.cantidades .menos{
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    background-color: #000000;
-    border: none;
-    top: 35%;
-    left: 4%;
-}
-.cantidades button:hover{
-    background-color: grey;
-    opacity: 0.8;
-}
-
-.color{
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 15%;
-    height: 20%;
-
-}
-
-.color p {
-    text-align: center;
-}
-
-.col_colores{
-    color: aliceblue;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.color div{
-    cursor: pointer;
-    padding: 0.3rem;
-    text-transform: capitalize;
-}
-
-.color div:hover{
-    background-color: rgb(161, 163, 165);
-}
-
-
-#lista{
-    position: absolute;
-    right: 15%;
-    bottom: 4%;
-    width: 100px;
-    height: 30px;
+.info .botones button {
+    width: 60%;
+    height: 3rem;
+    padding: .3rem;
+    background-color: rgb(12, 12, 12);
     color: white;
-    text-align: center;
+    border: 1px solid rebeccapurple; 
+    box-shadow: 3px 3px 1px 1px blue;
     text-transform: uppercase;
-    background-color: #000000;
-    border: none;
-    border-radius: 10px;
-}
-#lista option {
-    color: #ffffff; /* Color por defecto del texto de las opciones */
-    background-color: #332f2f; /* Color por defecto del fondo de las opciones */
 }
 
-#lista option:checked {
-    display: none; /* Oculta la opción seleccionada */
+.info .botones button:hover{
+    opacity: .8;
+    background-color: rgb(58, 57, 57);
 }
 
-#lista option[value="rojo"] {
-    color: red; /* Cambia el color del texto de la opción "rojo" a rojo */
-    background-color: pink; /* Cambia el color de fondo de la opción "rojo" a rosa */
-}
-
-#lista option[value="verde"] {
-    color: green; /* Cambia el color del texto de la opción "verde" a verde */
-    background-color: lightgreen; /* Cambia el color de fondo de la opción "verde" a verde claro */
-}
-
-#lista option[value="azul"] {
-    color: blue; /* Cambia el color del texto de la opción "azul" a azul */
-    background-color: rgb(22, 23, 24); /* Cambia el color de fondo de la opción "azul" a azul claro */
-}
-
-
-.formulario {
-    position: relative;
-    top: 200px;
-    width: 55%;
-    margin: 0 auto;
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.formulario h2{
-    color: aliceblue;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    color: aliceblue;
-}
-
-input {
-    background-color: #2e2b2b;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #470099;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
+.info .botones p{
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.men {
-    color: red;
-}
-
-/* Estilos adicionales para mejorar la apariencia */
-h2 {
-    text-align: center;
-}
-
-
-
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus {
-    outline: none;
-    border-color: #4CAF50;
-}
-
-.cop{
+#pr{
     font-size: 30px;
+    
 }
 
 
-.des-imagenes{
+/*hijos de info*/
+
+
+.carac{
     position: relative;
-    margin-top: 20px;
-    width: 99%;
-    height: 300px;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rebeccapurple; 
+    box-shadow: 1px 1px 3px 3px rgb(46, 2, 148);
+    height: 48%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-
+    row-gap: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
+/*hijos de carac*/
 
-#colorForm{
-    margin-top: 300px;
+.cantidades{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+.cantidades p {
+    color:  white;
 }
 
-
-.caja-imagenes{
-    position: relative;
-    width: 8.5rem;
-    height: 100%;
-   
+.cantidades .mas {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: black;
+    color: azure;
+    border: 2px solid  rebeccapurple;
 }
-.caja-imagenes img{
-    width: 100%;
-    height: 80%;
-}
-
-.caja-imagenes p {
-    color: aliceblue;
-    font-size: 10px;
-    text-align: center;
+.mas:hover{
+    background-color: rgb(41, 40, 40);
 }
 
-.id{
-    color: red;
+.cantidades .menos {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: black;
+    color: azure;
+    border: 2px solid  rebeccapurple;
+}
+.menos:hover{
+    background-color: rgb(41, 40, 40);
 }
 
-.pagosepay{
-    color: #ffffff;
+#lista {
+    color: rgb(255, 253, 253); 
+    background-color: rgb(0, 0, 0);
+    width: 12vh;
+    height: 4vh;
     text-transform: uppercase;
-    background-color: #000000;
-    border: 1px solid blue;
+    border: 2px solid  rebeccapurple;
 }
 
-/* Media Query para 1400px */
-@media (max-width: 1400px) {
-    .caja-individual {
-        position: relative;
-        top: 150px;
-        display: flex;
-        height: 1000px;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    #image {
-        width: 60%;
-        height: 80%;
-    }
-    .producto-detalles2 {
-        width: 60%;
-        height: 80%;
-    }
-
-    .formulario {
-        position: relative;
-        left: 1%;
-    }
-
-    .uno-uno{
-        font-size: .8rem;
-    }
-    .uno{
-        font-size: 1.2rem;
-
-    }
-    .cop{
-        font-size: 1rem;
-    }
-    .dos{
-        font-size: .5rem;
-    }
-
-    .caja-imagenes{
-        position: relative;
-        width: 4.5rem;
-        height: 50%;
-       
-    }
-    .caja-imagenes img{
-        width: 100%;
-        height: 80%;
-    }
-
-
-
+#lista option {
+    color: rgb(255, 253, 253); 
+    text-transform: uppercase;
 }
-
-@media (max-width: 900px) {
-    .bor{
-        position: absolute;
-        width: 1%;
-        height: 1%;
-    }
-    .caja-individual {
-        position: relative;
-        display: flex;
-        height: 1000px;
-        align-items: center;
-
-    }
-    #image {
-        width: 60%;
-        height: 70%;
-    }
-    .producto-detalles2 {
-        width: 60%;
-        height: 70%;
-
-    }
-    .formulario {
-        width: 80%;
-    }
-    .des-imagenes{
-        grid-template-columns: repeat(4, 1fr);
-       
-    }
-
-    .caja-imagenes{
-        position: relative;
-        width: 5rem;
-        height: 90%;
-       
-    }
-    .caja-imagenes img{
-        width: 100%;
-        height: 80%;
-    }
-}
-
-@media (max-width: 800px) {
-    .bor{
-        position: absolute;
-        width: 1%;
-        height: 1%;
-    }
-    .caja-individual {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 1000px;
-
-    }
-    #image {
-        width: 60%;
-        height: 60%;
-    }
-    .producto-detalles2 {
-        width: 60%;
-        height: 60%;
-    }
-
-    .des-imagenes{
-        grid-template-columns: repeat(3, 1fr);
-       
-    }
-
-
-    .caja-imagenes{
-        position: relative;
-        width: 5rem;
-        height: 90%;
-       
-    }
-    .caja-imagenes img{
-        width: 100%;
-        height: 80%;
-    }
-
-
-}
-
-
-@media (max-width: 630px) {
-    .bor{
-        position: absolute;
-        width: 1%;
-        height: 1%;
-    }
-    .caja-individual {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        top: 200px;
-        height: 1000px;
-
-    }
-    #image {
-        width: 80%;
-        height: 60%;
-    }
-    .producto-detalles2 {
-        width: 80%;
-        height: 60%;
-    }
-
-    .des-imagenes{
-        grid-template-columns: repeat(3, 1fr);
-       
-    }
-
-    .caja-imagenes{
-        position: relative;
-        width: 3.5rem;
-        height: 75%;
-       
-    }
-    .caja-imagenes img{
-        width: 100%;
-        height: 80%;
-    }
-
-
-}
-
 
 
 .colores-tipos {
-    position: relative;
-    width: 30%;
-    height: 20%;
-    right: 36%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-}
-
-.imagen_tip {
     display: flex;
-    height: 100%;
-    width: 4rem;
+    height: 15vh;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
-.imagen_tip:hover {
-    border: 1px solid blueviolet;
-    box-shadow: 2px 2px 2px 1px rgb(33, 10, 139);
+.colores-tipos div {
+    width: 20%;
 }
 
-.imagen_tip img {
+.colores-tipos div img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
+}
+.colores-tipos div:hover{
+    border: 2px solid  rebeccapurple;
+    
 }
 
-#colores_gl {
+#colores_gl{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 150px;
-    position: relative;
-    top: 38%;
-    right: 30%;
+    align-items: center;
 }
 
-#colores_gl div {
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    width: 2rem;
-    height: 2rem;;
+
+
+.color-lo{
+    width: 4vh;
+    height: 4vh;;
     border-radius: 100%;
+    margin-bottom: 2%;
 }
+
+.color-lo:hover{
+    border: 2px solid  rebeccapurple;
+}
+/*hijos de carac*/
+
+/*hijos de productosdetalles*/
+
+
+@media only screen and (max-width: 1400px) {
+    /* Styles for screens less than 768px wide */
+  
+    .caja-individual {
+      flex-direction: column;
+      gap: 10%;
+      margin-top: 200px;
+    }
+
+    #image {
+        position: relative;
+        width: 50%;
+        height: 60%;
+    
+    
+    }
+
+    .producto-detalles2{
+        width: 50%;
+        height: 60%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    
+        flex-direction: column;
+        
+    }
+  
+    
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    /* Styles for screens less than 768px wide */
+  
+    .caja-individual {
+      flex-direction: column;
+      gap: 10%;
+      margin-top: 200px;
+    }
+
+    #image {
+        position: relative;
+        width: 65%;
+        height: 80vh;
+    
+    
+    }
+
+
+    #image .adelante {
+        width: 2rem;
+        height: 2rem;
+        
+    
+    }
+    #image .atras {
+        width: 2rem;
+        height: 2rem;
+        
+    
+    }
+
+    .producto-detalles2{
+        width: 65%;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    
+        flex-direction: column;
+        
+    }
+  
+    
+}
+
+

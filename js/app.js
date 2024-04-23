@@ -1,50 +1,96 @@
 
-const datos1 = localStorage.getItem("pagos")
-const datos = JSON.parse(datos1)
+let datos1 = localStorage.getItem("pagos")
+let datos = JSON.parse(datos1)
 
-console.log(datos)
 
-const root = document.querySelector(".root_double")
+
+let numero = datos.precio
+const numeroString = numero.toString();
+let resultado = "";
+let contador = 0;
+
+for (let i = numeroString.length - 1; i >= 0; i--) {
+    resultado = numeroString[i] + resultado;
+    contador++;
+    if (contador % 3 === 0 && i !== 0) {
+      resultado = "." + resultado;
+    }
+
+}
+
+const root = document.querySelector(".padre")
 
 root.innerHTML =    `
-            <div class="formulario">
-                <h2>DATOS DE TRANSACCION</h2>
-                <form id="form">
-                    <div class="campo">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="campo">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" required>
-                    </div>
-                    <div class="campo">
-                        <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" name="celular" required>
-                    </div>
-                    <div class="campo">
-                        <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div class="campo">
-                        <label for="direccion">Dirección:</label>
-                        <input type="text" id="direccion" name="direccion" required>
-                    </div>
-                    <div class="campo">
-                        <label for="ciudad">Ciudad:</label>
-                        <input type="text" id="ciudad" name="ciudad" required>
-                    </div>
-                    <div class="campo">
-                        <label for="pais">País:</label>
-                        <input type="text" id="pais" name="pais" required>
-                    </div>
-                    <div class="campo">
-                    <div class="campo">
-                        <p class="men"></p>
-                        <input id="env" type="submit" value="Enviar">
-                    </div>
-                </form>
+<div class="root_double">
+    <div class="formulario">
+        <h2>DATOS DE TRANSACCIÓN</h2>
+        <form id="form">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="campo">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="campo">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="campo">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+            <div class="campo">
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+            </div>
+            <div class="campo">
+                <p class="men"></p>
+                <input id="env" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="normal">
+    <div class="info">
+        <h2 class="precio-data">PRECIO: ${resultado} COP</h2> 
+        <p class="info-data">${datos.info}</p>
+        <div class="talla-info">
+            <h4> TALLA ESCOGIDA : </h4>
+            <p> ${datos.talla} </p>
+        </div>
+        <div class="talla-info">
+            <h4>  COLOR ESCOGIDO : </h4>
+            <p> ${datos.color} </p>
+        </div>
+        <div class="cajaimg">
+            <div>
+                <h3>MÉTODO DE TRANSACCIÓN DE PAGOS 100% SEGURA</h3>
+            </div>
+            <div>
+                <p>Empresa reconocida en toda Latinoamérica y 100% segura y confiable</p> 
+            </div>
+            <div>
+                <img class="imgpago" src="../images/pago/1.png">
+            </div>
+        </div>
+    </div>
+    <div class="pagosss">
+        <img id="imgpagos" src="${datos.imagen}" alt="">
+        <button id="epayuu">TERMINAR LA TRANSACCIÓN</button>
+    </div>
+</div>
+
+
 `
 
 
@@ -146,20 +192,15 @@ var handler = ePayco.checkout.configure({
 });
 
 // Verificar si el token está configurado correctamente
-if (!handler) {
-    console.error("Error: El token no está configurado correctamente. Verifica la configuración del token.");
-} else {
+
     var data = {
         // Parámetros de la compra (obligatorios)
         name: datos.id,
         description: datos.info,
         currency: "cop",
         amount: datos.precio,
-        tax_base: "4000",
-        tax: "500",
-        tax_ico: "500",
         country: "co",
-        lang: "en",
+        lang: "es",
         acepted : "/compra.html",
         rejected: "/comprafallida.html",
 
@@ -168,8 +209,10 @@ if (!handler) {
         methodsDisable: [ "PSE","SP","CASH"]
         // Opciones de pago
     };
-    // Token configurado correctamente, continuar con la lógica del programa
-    // ...
-}
+    document.querySelector("#epayuu").addEventListener("click", e => {
+        console.log("Botón de ePayco clicado");
+        handler.open(data);
+    });
+    
 
-const imagenPagos = document.querySelector(".imgpagos")
+

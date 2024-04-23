@@ -3,12 +3,12 @@ import { slider } from "./slider2.js";
 
 
 let productos = [];
-let productosEnCarrito;
+
+let productosEnCarrito = [];
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const contenedorProductos = document.createElement("div");
 contenedorProductos.id = "contenedor-productos"
 contenedorProductos.classList.add("contenedor-productos")
-const tituloPrincipal = document.querySelector("#titulo-principal");
 const numerito = document.querySelector("#numerito");
 const main = document.querySelector("#bor");
 localStorage.setItem("arreglo", "")
@@ -21,6 +21,7 @@ fetch("./js/productos.json")
         localStorage.setItem("arreglo", JSON.stringify(productos))
 
     });
+
 
 
 
@@ -61,16 +62,31 @@ function cargarProductos(productosElegidos) {
     // Limpiar el contenedor de productos
     contenedorProductos.innerHTML = "";
 
+
     productosElegidos.forEach((producto, i) => {
+        let numero1 = producto.precio
+        const numeroString1 = numero1.toString();
+        let resultado1 = "";
+        let contador1 = 0;
+    
+        for (let i = numeroString1.length - 1; i >= 0; i--) {
+            resultado1 = numeroString1[i] + resultado1;
+            contador1++;
+            if (contador1 % 3 === 0 && i !== 0) {
+              resultado1 = "." + resultado1;
+            }
+    
+        }
+
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-            <div id="qw" data-index="${i}">
+            <div id="qw" >
                 <img class="producto-imagen" src="${producto.imagen[0]}" alt="${producto.titulo}">
                 <div class="producto-detalles">
                     <h3 class="producto-titulo">${producto.titulo}</h3>
-                    <p class="producto-precio">$${producto.precio}</p>
-                    <button class="producto-agregar" id="${producto.id}">Agregar</button>
+                    <p class="producto-precio">$${resultado1}</p>
+                    <button class="producto-agregar" id="qw2"  data-index="${i}">Ver el producto</button>
                 </div>
             </div>
         
@@ -92,51 +108,15 @@ function cargarProductos(productosElegidos) {
 
 
 function actualizarBotonesAgregar() {
-    const botonesAgregar = document.querySelectorAll(".producto-agregar");
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
-    });
-    const qw = document.querySelectorAll("#qw");
+   
+    const qw = document.querySelectorAll("#qw2");
     qw.forEach(bo => {
         bo.addEventListener("click", drawkp);
         
     });
 }
 
-function agregarAlCarrito(e) {
-    e.stopPropagation();
-    Toastify({
-        text: "Producto agregado",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
-          borderRadius: "2rem",
-          textTransform: "uppercase",
-          fontSize: ".75rem"
-        },
-        offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-        },
-        onClick: function(){} // Callback after click
-    }).showToast();
 
-    const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantidad++;
-    } else {
-        productoAgregado.cantidad = 1;
-        productosEnCarrito.push(productoAgregado);
-    }
-    actualizarNumerito();
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-}
 
 
 
@@ -185,43 +165,48 @@ function drawkp(e) {
             <button class="adelante"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
             <button class="atras"><span class="material-symbols-outlined">arrow_back_ios</span></button>
         </div>
+
         <div class="producto-detalles2">
            <div class="info">
                 <div class="descripciones">
-                    <h2 class="title" >${pro.titulo}- ${pro.id}</h2>
+                    <h2 class="title" >${pro.titulo}</h2>
                     <hr>
-                    <p class="uno-uno">PRECIO</p>
-                    <p class="uno">${resultado}</p><p class="cop">COP</p>
-                    <hr>
+                    <div class ="precios12">
+                        <p class="uno" id="pr">${resultado}</p>   
+                        <p> COP</p>
+                    </div>
                     <p class="dos">${pro.info}</p>
+                    <div class="botones">
+                        <p class="mensaje1"></p>
+
+                        <button class="agregar2" id="${pro.id}">Agregar al carrito</button>
+                    </div>
                 </div>
-                
+                          
+           </div>
+           <div class="carac">
                 <div class="cantidades">
-                 
                     <button class="mas">+</button>
                     <p class="ca">${mas}</p>
                     <button class="menos">-</button>
-                   
+                    <div>
+                        <select id="lista" name="lista"></select>   
+                    </div>
                 </div>
-                <div>
-                    <select id="lista" name="lista"></select>   
-                </div>
-    
                 <div class="colores-tipos">
                 </div>
-        
                 <div id="colores_gl">
-
                 </div>
-              
-           </div>
-           <div class="botones">
-            
-           </div>
+     
+
         </div>
+     
+    </div>
+    <div class="dds">
     </div>
  
   `;
+
     let imagentttttt = ""; 
     let colors = "";
     let colores = pro.tipos_colores;
@@ -237,13 +222,6 @@ function drawkp(e) {
  
     document.querySelectorAll(".color-lo").forEach((es) => {
         es.addEventListener("click", e => {
-            if (es.style.border === "1px solid blueviolet" && es.style.boxShadow === "2px 2px 2px 1px rgb(33, 10, 139)") {
-                es.style.border = "";
-                es.style.boxShadow = "";
-            } else {
-                es.style.border = "1px solid blueviolet";
-                es.style.boxShadow = "2px 2px 2px 1px rgb(33, 10, 139)";
-            }
             colors = e.target.dataset.co;
         });
     });
@@ -263,10 +241,11 @@ function drawkp(e) {
     
         coloresTiposd.innerHTML += ds; // Agregar el contenido HTML al contenedor
     });
-    
+    let img = ""
     document.querySelectorAll(".imagen_tip45").forEach(ele => {
         ele.addEventListener("click" , e => {
-            pro.imagen21.ft = e.target.src
+            img = e.target.src
+            datosC[0].imagenelegida = e.target.src
             imagentttttt = e.target.dataset.estilo
         })
     })
@@ -275,7 +254,7 @@ function drawkp(e) {
     const select = document.getElementById('lista');
 
     let talla2222222 = pro.tallas
-    console.log(talla2222222)
+ 
 
     // Itera sobre el array de opciones y crea un elemento <option> por cada una
     talla2222222.forEach(opcion => {
@@ -307,7 +286,7 @@ function drawkp(e) {
             if (mas > pro.numerodecantidades) {
                 mas = pro.numerodecantidades;
             }
-            document.querySelector(".ca").textContent = mas;
+            document.querySelector(".ca").textContent = mas 
             updatePrecio(); // Llamar a la función para actualizar el precio
         });
     });
@@ -319,7 +298,7 @@ function drawkp(e) {
             if (mas < 1) {
                 mas = 1;
             }
-            document.querySelector(".ca").textContent = mas;
+            document.querySelector(".ca").textContent = mas 
             updatePrecio(); // Llamar a la función para actualizar el precio
         });
     });
@@ -376,6 +355,65 @@ function drawkp(e) {
 
         
     }
+    
+
+    const botonesAgregar = document.querySelectorAll(".agregar2");
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+
+        
+
+    
+    async function agregarAlCarrito(e) {
+        e.stopPropagation();
+        if (colors === "" || img === "" || select.value === "") {
+            document.querySelector(".mensaje1").textContent = "TIENES QUE LLENAR TODOS LOS REQUISITOS";
+            setTimeout(() => {
+                document.querySelector(".mensaje1").textContent = "";
+            }, 3000);
+        } else {
+            Toastify({
+                text: "Producto agregado",
+                duration: 3000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #4b33a8, #785ce9)",
+                  borderRadius: "2rem",
+                  textTransform: "uppercase",
+                  fontSize: ".75rem"
+                },
+                offset: {
+                    x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+                    y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
+        
+            let datos40 = {
+                id: pro.id,
+                title: pro.titulo,
+                info: pro.info,
+                precio: pro.precio,
+                color: colors,
+                talla: select.value,
+                imagen: img ,
+                cantidad: mas
+                
+            }
+            productosEnCarrito.push(datos40)
+            actualizarNumerito();
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+         
+            
+        }
+       
+    }
+
+
 
    
 
@@ -386,76 +424,82 @@ function drawkp(e) {
 
 
     localStorage.setItem("pagos", "")
-
     
-    // Llamar a la función enviarDatosAPI para enviar datos a la API
-  // Llamar a la función enviarDatosAPI para enviar datos a la API
+// Seleccionar todos los elementos con la clase "botones" y agregar un listener de eventos a cada uno
     document.querySelectorAll(".botones").forEach((contenedor) => {
+        // Crear un botón de pago con ePayco
         const botonPago = document.createElement("button");
-        botonPago.classList.add("pagosepay")
+        botonPago.classList.add("pagosepay");
         botonPago.textContent = "Pagar con ePayco";
+
+        // Agregar un listener de eventos al botón de pago
         botonPago.addEventListener("click", async function() {
+            // Calcular el precio total del producto
             const precioUnitario = parseFloat(pro.precio);
             const cantidad = parseFloat(document.querySelector(".ca").textContent);
             const precioTotal = precioUnitario * cantidad;
-            pro.precio = precioTotal
-            const proJSON = JSON.stringify(pro);   
-            localStorage.setItem("pagos", proJSON);
-
-            //tallas 
-            const options = {
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json; charset=utf-8"
-                }
-            };
-        
-            try {
-                options.body = JSON.stringify({
-                    id: pro.id === pro.id ? id++ :id,
-                    id2: pro.id,
-                    titulo : pro.titulo,
-                    categoria: pro.categoria.nombre,
-                    tallas: select.value,
-                    cantidad: mas,
-                    colores, colors,
-                    disenos: imagentttttt,
-                    elegido: pro.imagen21.ft
-                });
-        
-                const res = await fetch("http://localhost:3000/tallasydemas", options);
-                if (res.status === 200) {
-                    console.log(res);
-                } else {
-                    console.log("Algo falló en el post");
-                }
-            
-            } catch(err) {
-                console.log(err);
+            pro.precio = precioTotal;
+            let datosd = {
+                    id: pro.id,
+                    title: pro.titulo,
+                    info: pro.info,
+                    precio: pro.precio,
+                    color: colors,
+                    talla: select.value,
+                    imagen: img 
             }
-
-
-
-            window.location.href = "../pagos.html"
-        
             
+            localStorage.setItem("pagos", JSON.stringify(datosd));
+
+
+            // Verificar los requisitos antes de realizar la acción
+            if ( colors === "" || img === "" || select.value === "") {
+                document.querySelector(".mensaje1").textContent = "TIENES QUE LLENAR TODOS LOS REQUISITOS";
+                setTimeout(() => {
+                    document.querySelector(".mensaje1").textContent = "";
+                }, 3000);
+            } else {
+                // Realizar una solicitud POST con los datos necesarios
+                const options = {
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json; charset=utf-8"
+                    },
+                    body: JSON.stringify({
+                        id: pro.id === pro.id ? id++ : id,
+                        id2: pro.id,
+                        titulo : pro.titulo,
+                        categoria: pro.categoria.nombre,
+                        tallas: select.value,
+                        cantidad: mas,
+                        colores: colors,
+                        disenos: imagentttttt,
+                        elegido: img
+                    })
+                };
+                
+                try {
+                    const res = await fetch("http://localhost:200/tallasydemas", options);
+                    if (res.status === 200) {
+                        window.location.href = "../pagos.html"
+    
+
+                    } else {
+                        console.log("Algo falló en el post");
+                    }
+                    // Redirigir a la página de pagos
+
+                } catch(err) {
+                    console.log(err);
+                }
+            }
         });
+
+        // Agregar el botón de pago al contenedor
         contenedor.appendChild(botonPago);
     });
-        
-        
-        
- 
 
 
-
-    
-
-    
-    
-
-   
-   
 
 }
 

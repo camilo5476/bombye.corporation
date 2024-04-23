@@ -27,10 +27,12 @@ function cargarProductosCarrito() {
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
-                <img class="carrito-producto-imagen" src="${producto.imagen[0]}" alt="${producto.titulo}">
+                <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.title}">
                 <div class="carrito-producto-titulo">
-                    <small>${producto.categoria.id} </small>
-                    <h3>${producto.titulo}</h3>
+                    <small>${producto.id} </small>
+                    <h3>${producto.title}</h3>
+                    <h3> color:  ${producto.colorele} </h3>
+                    <h3> talla:  ${producto.talla} </h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Cantidad</small>
@@ -44,9 +46,14 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
                 </div>
+                <div id="lista">
+
+                </div>
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
                 <button id="carrito-acciones-comprar" class="carrito-acciones-comprar" data-id = "${i}" data-preciototal="${producto.precio * producto.cantidad}">Comprar ahora</button
             `;
+
+
     
             contenedorCarritoProductos.append(div);
         })
@@ -131,6 +138,7 @@ function actualizarTotal() {
     total.innerText = `$${totalCalculado}`;
 }
 
+    
 
 
 
@@ -160,6 +168,8 @@ function paypago (e) {
     let json = JSON.stringify(pro)
     localStorage.setItem("pagos", json)
     window.location.href = "../pagos.html"
+    
+
     
 
 
